@@ -1,0 +1,3480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japan Autumn Foliage 2026: 22-Day Tohoku, Nikko & Tokyo Master Planner</title>
+<style>
+  :root {
+    --bg: #F9F6F0;
+    --bg-pattern: radial-gradient(circle at 20% 15%, rgba(200, 62, 43, 0.04) 0%, transparent 45%),
+                  radial-gradient(circle at 85% 80%, rgba(217, 119, 6, 0.04) 0%, transparent 45%);
+    --surface: #FFFFFF;
+    --surface-alt: #F3EDE2;
+    --surface-elevated: rgba(255, 255, 255, 0.92);
+    --ink: #1A2228;
+    --ink-muted: #56636D;
+    --ink-light: #82909B;
+    --accent: #C83E2B; /* Momiji Vermilion */
+    --accent-dark: #9E2B1C;
+    --accent-soft: #FDECE9;
+    --gold: #D97706; /* Ginkgo Gold */
+    --gold-soft: #FEF3C7;
+    --indigo: #1E3A5F; /* Aizome Indigo */
+    --indigo-soft: #E0E7FF;
+    --forest: #246347; /* Cedar Green */
+    --forest-soft: #DCFCE7;
+    --plum: #6B21A8;
+    --plum-soft: #F3E8FF;
+    --border: #E4DCCB;
+    --border-strong: #D0C4AE;
+    --shadow-sm: 0 2px 10px rgba(26, 34, 40, 0.04);
+    --shadow: 0 8px 28px rgba(26, 34, 40, 0.06);
+    --shadow-lg: 0 14px 40px rgba(26, 34, 40, 0.10);
+    --radius-lg: 18px;
+    --radius: 14px;
+    --radius-sm: 9px;
+  }
+
+  body.dark-mode {
+    --bg: #12171C;
+    --bg-pattern: radial-gradient(circle at 20% 15%, rgba(200, 62, 43, 0.08) 0%, transparent 45%),
+                  radial-gradient(circle at 85% 80%, rgba(217, 119, 6, 0.07) 0%, transparent 45%);
+    --surface: #1B232B;
+    --surface-alt: #242E38;
+    --surface-elevated: rgba(27, 35, 43, 0.94);
+    --ink: #F1F5F9;
+    --ink-muted: #94A3B8;
+    --ink-light: #64748B;
+    --accent: #E05A47;
+    --accent-dark: #C83E2B;
+    --accent-soft: rgba(224, 90, 71, 0.18);
+    --gold: #F59E0B;
+    --gold-soft: rgba(245, 158, 11, 0.18);
+    --indigo: #60A5FA;
+    --indigo-soft: rgba(96, 165, 250, 0.18);
+    --forest: #34D399;
+    --forest-soft: rgba(52, 211, 153, 0.16);
+    --plum: #C084FC;
+    --plum-soft: rgba(192, 132, 252, 0.18);
+    --border: #2E3A46;
+    --border-strong: #3E4C5B;
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.25);
+    --shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.45);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg);
+    background-image: var(--bg-pattern);
+    color: var(--ink);
+    line-height: 1.6;
+    padding-bottom: 80px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  a {
+    color: var(--indigo);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(30, 58, 95, 0.25);
+    transition: all 0.15s ease;
+  }
+  a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* Toast Notification */
+  .toast-box {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #182838;
+    color: #FFFFFF;
+    padding: 13px 20px;
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+    box-shadow: var(--shadow-lg);
+    font-size: 13.5px;
+    font-weight: 600;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(16px);
+    pointer-events: none;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .toast-box.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hero Header */
+  .hero {
+    background: linear-gradient(130deg, #131F2C 0%, #241920 48%, #4F1E19 85%, #6B2A1E 100%);
+    color: #FFFFFF;
+    padding: 34px 32px 38px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid var(--accent);
+  }
+
+  .hero-maple-bg {
+    position: absolute;
+    right: -30px;
+    top: -20px;
+    width: 380px;
+    height: 320px;
+    opacity: 0.11;
+    pointer-events: none;
+  }
+
+  .hero-top {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(200, 62, 43, 0.35);
+    border: 1px solid rgba(255, 175, 155, 0.45);
+    color: #FFD7CE;
+    padding: 4px 13px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-badge.gold {
+    background: rgba(217, 119, 6, 0.28);
+    border-color: rgba(253, 224, 71, 0.4);
+    color: #FEF08A;
+  }
+
+  .hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  .hero-subtitle {
+    color: #E2E8F0;
+    font-size: 13.5px;
+    max-width: 840px;
+    line-height: 1.6;
+  }
+
+  .hero-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .fx-control-card {
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 10px 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .fx-label {
+    font-size: 11.5px;
+    color: #F1F5F9;
+    font-weight: 700;
+  }
+  .fx-label span {
+    display: block;
+    font-size: 10.5px;
+    color: #CBD5E1;
+    font-weight: 400;
+  }
+
+  .fx-input-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.30);
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+  .fx-input-group input[type="number"] {
+    width: 64px;
+    background: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: right;
+    outline: none;
+  }
+
+  /* KPI Strip */
+  .kpi-strip {
+    max-width: 1440px;
+    margin: -22px auto 22px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 14px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .kpi-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .kpi-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+  }
+  .kpi-card.highlight::before { background: linear-gradient(90deg, var(--accent), #E66A4E); }
+  .kpi-card.warning::before { background: linear-gradient(90deg, var(--gold), #FBBF24); }
+  .kpi-card.savings::before { background: linear-gradient(90deg, var(--forest), #34D399); }
+  .kpi-card.indigo::before { background: linear-gradient(90deg, var(--indigo), #60A5FA); }
+
+  .kpi-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--ink-muted);
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .kpi-main {
+    font-size: 23px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.5px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .kpi-sub {
+    font-size: 11.5px;
+    color: var(--ink-muted);
+    margin-top: 5px;
+  }
+
+  /* Sticky Navigation Bar with 8 Organized Tabs */
+  .nav-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--surface-elevated);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .nav-bar {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .tab-btn {
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--ink-muted);
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 8px 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  .tab-btn:hover {
+    color: var(--ink);
+    background: var(--surface-alt);
+  }
+
+  .tab-btn.active {
+    background: var(--accent);
+    color: #FFFFFF;
+    border-color: var(--accent-dark);
+    box-shadow: 0 3px 10px rgba(200, 62, 43, 0.25);
+  }
+
+  .tab-count {
+    font-size: 10.5px;
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.08);
+    font-weight: 800;
+  }
+  .tab-btn.active .tab-count {
+    background: rgba(255, 255, 255, 0.24);
+    color: #FFF;
+  }
+
+  .action-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .btn {
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .btn:hover {
+    border-color: var(--ink-muted);
+    background: var(--surface-alt);
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #FFF;
+    border-color: var(--accent);
+  }
+  .btn-primary:hover {
+    background: var(--accent-dark);
+    color: #FFF;
+  }
+
+  .btn-danger {
+    color: #B91C1C;
+    border-color: #FECACA;
+    background: #FEF2F2;
+  }
+  .btn-danger:hover {
+    background: #FEE2E2;
+  }
+
+  /* Main Container */
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .tab-pane {
+    display: none;
+    animation: fadeIn 0.2s ease;
+  }
+  .tab-pane.active { display: block; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Section Cards */
+  .section-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 22px 26px;
+    box-shadow: var(--shadow);
+    margin-bottom: 22px;
+  }
+
+  .section-card h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .section-card p.lead {
+    font-size: 13.5px;
+    color: var(--ink-muted);
+    margin-bottom: 18px;
+  }
+
+  /* Overview Grid (Tab 1) */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+  @media (max-width: 1040px) {
+    .overview-grid { grid-template-columns: 1fr; }
+  }
+
+  .phase-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .phase-card {
+    display: grid;
+    grid-template-columns: 115px 1fr auto;
+    gap: 14px;
+    align-items: center;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--indigo);
+    border-radius: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .phase-card:hover {
+    transform: translateX(3px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .phase-days {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--indigo);
+    background: var(--indigo-soft);
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .phase-info h4 {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 3px;
+  }
+  .phase-info p {
+    font-size: 12.5px;
+    color: var(--ink-muted);
+  }
+
+  /* Filter Bar & Pills */
+  .filter-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .pill {
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--ink-muted);
+    padding: 6px 13px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .pill:hover {
+    border-color: var(--ink-muted);
+    color: var(--ink);
+  }
+
+  .pill.active {
+    background: var(--indigo);
+    color: #FFF;
+    border-color: var(--indigo);
+  }
+
+  .search-input {
+    border: 1px solid var(--border-strong);
+    background: var(--bg);
+    color: var(--ink);
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    min-width: 220px;
+    outline: none;
+  }
+  .search-input:focus {
+    border-color: var(--accent);
+  }
+
+  /* Quick Day Jump Strip */
+  .day-jump-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    border-radius: var(--radius);
+  }
+
+  .day-jump-btn {
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--ink-muted);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.12s ease;
+  }
+  .day-jump-btn:hover {
+    background: var(--accent);
+    color: #FFF;
+    border-color: var(--accent);
+  }
+  .day-jump-btn.pass-day {
+    border-bottom: 3px solid var(--forest);
+  }
+
+  /* Day Cards (Tab 2) */
+  .day-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .day-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.15s ease;
+    position: relative;
+  }
+  .day-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow);
+  }
+  .day-card.pass-active { border-left: 5px solid var(--forest); }
+  .day-card.needs-attention { border-left: 5px solid var(--gold); }
+
+  .day-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .day-title-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .day-num {
+    background: var(--indigo);
+    color: #FFF;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 0.4px;
+  }
+
+  .day-date {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--ink-muted);
+  }
+
+  .region-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+  .region-Saitama { background: #E0E7FF; color: #1E40AF; }
+  .region-Iwate-Aomori { background: #DCFCE7; color: #166534; }
+  .region-Aomori { background: #FEE2E2; color: #991B1B; }
+  .region-Miyagi { background: #FEF3C7; color: #92400E; }
+  .region-Yamagata { background: #F3E8FF; color: #6B21A8; }
+  .region-Tochigi-Ibaraki { background: #FFEDD5; color: #9A3412; }
+  .region-Tokyo { background: #E2E8F0; color: #1E293B; }
+
+  .pass-badge {
+    background: var(--forest-soft);
+    color: var(--forest);
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 9px;
+    border-radius: 6px;
+  }
+
+  .day-cost-pill {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--ink);
+    background: var(--surface-alt);
+    padding: 5px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .day-cost-pill small {
+    font-weight: 600;
+    color: var(--ink-muted);
+    margin-left: 4px;
+  }
+
+  .day-route-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .day-route-sub {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-bottom: 12px;
+  }
+
+  .day-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+    background: var(--bg);
+    padding: 11px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font-size: 12.5px;
+  }
+
+  .meta-item strong {
+    display: block;
+    font-size: 11px;
+    color: var(--ink-light);
+    margin-bottom: 2px;
+  }
+
+  .legs-strip {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .leg-chip {
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 9px;
+    border-radius: 6px;
+    color: var(--ink);
+  }
+  .leg-chip.non-jr {
+    background: #FFF7ED;
+    border-color: #FDBA74;
+    color: #9A3412;
+  }
+
+  .day-notes {
+    margin-top: 10px;
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    background: var(--surface-alt);
+    border-left: 3px solid var(--accent);
+    padding: 8px 12px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  /* Hotels Grid (Tab 3) */
+  .hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 18px;
+  }
+
+  .hotel-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hotel-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--indigo);
+  }
+  .hotel-card.luxury::before {
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+  }
+
+  /* Route SVG Wrap */
+  .route-svg-wrap {
+    background: linear-gradient(180deg, #EAF2F8 0%, #F7F3EB 100%);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px;
+    text-align: center;
+  }
+  body.dark-mode .route-svg-wrap {
+    background: linear-gradient(180deg, #17222D 0%, #1F2831 100%);
+  }
+
+  .map-node { cursor: pointer; }
+  .map-node:hover circle {
+    r: 9.5;
+    fill: var(--accent);
+  }
+
+  /* Tables */
+  .data-table-wrap { overflow-x: auto; }
+
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  table.data-table th {
+    background: var(--surface-alt);
+    color: var(--ink);
+    font-weight: 700;
+    text-align: left;
+    padding: 11px 12px;
+    border-bottom: 2px solid var(--border-strong);
+    white-space: nowrap;
+  }
+
+  table.data-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+
+  table.data-table tr:hover td { background: var(--surface-alt); }
+
+  .num-col {
+    text-align: right !important;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .editable-num {
+    width: 92px;
+    padding: 5px 7px;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  .editable-num:focus {
+    border-color: var(--accent);
+    background: var(--surface);
+    outline: none;
+  }
+
+  .editable-text {
+    width: 100%;
+    min-width: 150px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 13px;
+    background: transparent;
+    color: var(--ink);
+  }
+  .editable-text:hover, .editable-text:focus {
+    border-color: var(--border-strong);
+    background: var(--surface);
+    outline: none;
+  }
+
+  /* Strategy & Info Cards */
+  .strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .strategy-card {
+    border: 1px solid var(--border);
+    background: var(--bg);
+    border-radius: 14px;
+    padding: 18px 20px;
+    position: relative;
+  }
+
+  .strategy-card.optimal {
+    border: 2px solid var(--forest);
+    background: var(--forest-soft);
+  }
+
+  .strategy-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+
+  /* Gourmet Grid (Tab 6) */
+  .gourmet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+  }
+
+  .food-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .food-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+
+  .food-card.tried {
+    border: 2px solid var(--forest);
+  }
+
+  .food-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .tabelog-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #FFFBEB;
+    border: 1px solid #F59E0B;
+    color: #B45309;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 3px 9px;
+    border-radius: 6px;
+  }
+
+  .score-bar-track {
+    height: 6px;
+    background: var(--surface-alt);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+  .score-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #F59E0B, #EA580C);
+    border-radius: 999px;
+  }
+
+  .transit-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 4px 9px;
+    border-radius: 6px;
+    margin-top: 8px;
+  }
+  .transit-easy { background: #DCFCE7; color: #166534; border: 1px solid #86EFAC; }
+  .transit-bus { background: #FEF3C7; color: #92400E; border: 1px solid #FDE68A; }
+  .transit-far { background: #FFEDD5; color: #9A3412; border: 1px solid #FDBA74; }
+
+  .food-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16.5px;
+    font-weight: 800;
+    color: var(--ink);
+  }
+
+  .food-origin-tag {
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--surface-alt);
+    color: var(--ink-muted);
+  }
+
+  .existing-badge {
+    display: inline-block;
+    background: #E0E7FF;
+    color: #1E40AF;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+  .added-badge {
+    display: inline-block;
+    background: #DCFCE7;
+    color: #166534;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  /* Bar chart rows */
+  .bar-row { margin-bottom: 12px; }
+  .bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .bar-track {
+    height: 11px;
+    background: var(--surface-alt);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 999px;
+  }
+
+  @media print {
+    .nav-wrapper, .filter-bar, .hero-controls, .day-jump-strip { display: none !important; }
+    .tab-pane { display: block !important; margin-bottom: 30px; }
+    body { background: #FFF; }
+  }
+</style>
+</head>
+<body>
+
+<div id="toastBox" class="toast-box"></div>
+
+<header class="hero">
+  <!-- Decorative Autumn Maple SVG Art -->
+  <svg class="hero-maple-bg" viewBox="0 0 200 200" fill="none">
+    <path d="M100 10 L115 55 L160 35 L135 80 L185 95 L140 120 L165 160 L115 140 L100 190 L85 140 L35 160 L60 120 L15 95 L65 80 L40 35 L85 55 Z" fill="#FFFFFF"/>
+  </svg>
+
+  <div class="hero-top">
+    <div>
+      <div class="hero-badge-row">
+        <span class="hero-badge">🍁 Autumn 2026 • Tohoku, Nikko & Tokyo (22 Days / 21 Nights)</span>
+        <span class="hero-badge gold">✨ 8-Tab Master Concierge & Budget Planner</span>
+      </div>
+      <h1>Japan Autumn Foliage 2026: Tohoku, Nikko & Tokyo Master Planner</h1>
+      <p class="hero-subtitle">
+        Wed, Oct 21 – Wed, Nov 11, 2026 • <strong>7 Base Hotels (21 Nights Confirmed) • 10-Day JR East Pass Optimizer • 24 Curated Regional Gourmet Spots with Tabelog Ratings & Transit Access • Bus Timetables & Nikko Foliage Routes</strong>
+      </p>
+    </div>
+
+    <div class="hero-controls">
+      <div class="fx-control-card">
+        <div class="fx-label">
+          Exchange Rate (SGD ↔ JPY)
+          <span>Live sync across all tabs</span>
+        </div>
+        <div class="fx-input-group">
+          <span style="color:#CBD5E1;font-size:12.5px;">1 SGD =</span>
+          <input type="number" id="fxRateInput" value="122" min="50" max="250" step="0.5" onchange="updateFxRate(this.value)" oninput="updateFxRate(this.value)">
+          <span style="color:#CBD5E1;font-size:12.5px;font-weight:700;">JPY</span>
+        </div>
+        <button class="btn" style="padding:5px 9px;font-size:11px;" onclick="updateFxRate(122)">Reset (122)</button>
+      </div>
+      <button class="btn" style="background:rgba(255,255,255,0.12);color:#FFF;border-color:rgba(255,255,255,0.25);padding:10px 14px;" onclick="toggleDarkMode()" id="themeBtn">🌙 Dark Mode</button>
+    </div>
+  </div>
+</header>
+
+<!-- Executive KPI Strip -->
+<section class="kpi-strip">
+  <div class="kpi-card highlight" onclick="switchTabById('budget')" style="cursor:pointer;">
+    <div class="kpi-title">
+      <span>Baseline Trip Budget</span>
+      <span style="color:var(--accent);">💴 View Budget →</span>
+    </div>
+    <div class="kpi-main" id="kpiBaselineJpy">¥694,567</div>
+    <div class="kpi-sub" id="kpiBaselineSgd">S$5,693.17 • Stay ¥266,949 + Travel ¥162,118 + Fun/Food ¥265,500</div>
+  </div>
+
+  <div class="kpi-card warning" onclick="switchTabById('rail')" style="cursor:pointer;">
+    <div class="kpi-title">
+      <span>All-In Total Budget (Incl. Local Transit)</span>
+      <span style="color:var(--gold);">🚄 View Transit →</span>
+    </div>
+    <div class="kpi-main" id="kpiReconciledJpy">¥720,517</div>
+    <div class="kpi-sub" id="kpiReconciledSgd">S$5,905.88 • Incl. Post-Pass JR ¥19,230 + Buses/Ropeway ¥6,720</div>
+  </div>
+
+  <div class="kpi-card savings" onclick="switchTabById('rail')" style="cursor:pointer;">
+    <div class="kpi-title">
+      <span>10-Day JR East Pass Savings</span>
+      <span style="color:var(--forest);">Days 3–12 (Oct 23–Nov 1)</span>
+    </div>
+    <div class="kpi-main" id="kpiPassSavingsJpy">Save ¥32,450</div>
+    <div class="kpi-sub" id="kpiPassSavingsSgd">S$265.98 Saved (¥50,000 Pass vs ¥82,450 Regular JR Fares)</div>
+  </div>
+
+  <div class="kpi-card indigo" onclick="switchTabById('hotels')" style="cursor:pointer;">
+    <div class="kpi-title">
+      <span>Accommodations & Curated Guides</span>
+      <span style="color:var(--indigo);">🏨 View Hotels →</span>
+    </div>
+    <div class="kpi-main">7 Bases • 21 Nights Booked</div>
+    <div class="kpi-sub">All 21 Nights Confirmed • 24 Gourmet Spots • 14 Timetables • 15 Guides</div>
+  </div>
+</section>
+
+<!-- Sticky 8-Tab Navigation Bar -->
+<div class="nav-wrapper">
+  <nav class="nav-bar">
+    <div class="tab-list" role="tablist">
+      <button class="tab-btn active" data-tab="overview" onclick="switchTab('overview', this)">🍁 1. Overview & Map</button>
+      <button class="tab-btn" data-tab="itinerary" onclick="switchTab('itinerary', this)">🗓️ 2. 22-Day Schedule <span class="tab-count">22d</span></button>
+      <button class="tab-btn" data-tab="hotels" onclick="switchTab('hotels', this)">🏨 3. Hotels & Stays <span class="tab-count">7 Bases</span></button>
+      <button class="tab-btn" data-tab="budget" onclick="switchTab('budget', this)">💴 4. Budget & Analytics</button>
+      <button class="tab-btn" data-tab="rail" onclick="switchTab('rail', this)">🚄 5. JR Pass & Transit</button>
+      <button class="tab-btn" data-tab="gourmet" onclick="switchTab('gourmet', this)">🍜 6. Regional Gourmet <span class="tab-count" id="foodCountBadge">24</span></button>
+      <button class="tab-btn" data-tab="access" onclick="switchTab('access', this)">🚌 7. Bus Timetables <span class="tab-count" id="accessCountBadge">14</span></button>
+      <button class="tab-btn" data-tab="guides" onclick="switchTab('guides', this)">📖 8. Sightseeing & Nikko <span class="tab-count" id="guidesCountBadge">15</span></button>
+    </div>
+    <div class="action-bar">
+      <button class="btn" onclick="syncLocalTransitToBudget()" title="Merge post-pass JR fares and local bus/ropeway fares (+¥25,950) into the daily expense ledger">⚡ Merge Local Transit (+¥25,950)</button>
+      <button class="btn" onclick="exportCsv()">📥 Export CSV</button>
+      <button class="btn" onclick="resetDefaultData()">↺ Reset Data</button>
+      <button class="btn" onclick="window.print()">🖨️ Print</button>
+    </div>
+  </nav>
+</div>
+
+<main class="container">
+
+  <!-- TAB 1: OVERVIEW & INTERACTIVE ROUTE MAP -->
+  <section id="tab-overview" class="tab-pane active">
+    <div class="overview-grid">
+      <div>
+        <div class="section-card">
+          <h2>
+            <span>🧭 22-Day Route Masterplan (7 Stay Phases)</span>
+            <span style="font-size:12.5px;color:var(--ink-muted);font-family:sans-serif;font-weight:600;">Click any phase card to jump to its daily schedule</span>
+          </h2>
+          <p class="lead">
+            Starting at the late-October autumn foliage peak in Northern Tohoku (Hirosaki, Oirase Gorge, Lake Towada, Mount Hakkoda, and Misawa), this route follows thekoyo (autumn leaves) front south through Miyagi (Naruko Gorge, Akiu Great Falls, Matsushima), Yamagata (Yamadera, Mogami River), Tochigi (Nikko World Heritage shrines & Lake Chuzenji), and finally Tokyo.
+          </p>
+          <div class="phase-timeline">
+            <div class="phase-card" style="border-left-color:#1E40AF;" onclick="jumpToRegionSchedule('Saitama')">
+              <div class="phase-days">Days 1–2<br><small>Oct 21–22 (2N)</small></div>
+              <div class="phase-info">
+                <h4>1. Haneda Arrival & Omiya Base (Ritz Carlton Omiya)</h4>
+                <p>Singapore → Haneda Airport (09:50 arrival) → Omiya. Exchange your 10-Day JR East Pass and settle in before heading north.</p>
+              </div>
+              <span class="btn" style="font-size:11.5px;">View →</span>
+            </div>
+
+            <div class="phase-card" style="border-left-color:#166534;" onclick="jumpToRegionSchedule('Iwate-Aomori')">
+              <div class="phase-days" style="background:#DCFCE7;color:#166534;">Days 3–5<br><small>Oct 23–25 (3N)</small></div>
+              <div class="phase-info">
+                <h4>2. Morioka Hub: Hirosaki Park, Oirase Gorge, Lake Towada, Tsutanuma & Mount Hakkoda</h4>
+                <p>3 nights at APA Hotel Morioka Ekimae. Activate your 10-Day JR East Pass to ride the Tohoku Shinkansen and JR Bus Tohoku to Northern Tohoku's premier foliage spots.</p>
+              </div>
+              <span class="btn" style="font-size:11.5px;">View →</span>
+            </div>
+
+            <div class="phase-card" style="border-left-color:#991B1B;" onclick="jumpToRegionSchedule('Aomori')">
+              <div class="phase-days" style="background:#FEE2E2;color:#991B1B;">Days 6–7<br><small>Oct 26–27 (2N)</small></div>
+              <div class="phase-info">
+                <h4>3. Misawa Onsen Retreat: Hoshino Resorts Aomoriya</h4>
+                <p>Luxury 2-night onsen retreat (¥113,600 total) featuring the floating "Ukiyu" open-air bath, Nebuta festival shows, Shibusawa Park foliage, and optional side trip to Hasshoku Center in Hachinohe.</p>
+              </div>
+              <span class="btn" style="font-size:11.5px;">View →</span>
+            </div>
+
+            <div class="phase-card" style="border-left-color:#D97706;" onclick="jumpToRegionSchedule('Miyagi')">
+              <div class="phase-days" style="background:#FEF3C7;color:#92400E;">Days 8–11<br><small>Oct 28–31 (4N)</small></div>
+              <div class="phase-info">
+                <h4>4. Sendai Hub: Naruko Gorge, Akiu Great Falls, Rairaikyo Gorge & Matsushima (Entsuin)</h4>
+                <p>4 nights at APA Hotel Sendai Eki Itsutsubashi. Day trips to Naruko Gorge, Akiu Great Falls, and Matsushima's Entsuin Temple foliage illumination, paired with Sendai beef tongue and harako-meshi.</p>
+              </div>
+              <span class="btn" style="font-size:11.5px;">View →</span>
+            </div>
+
+            <div class="phase-card" style="border-left-color:#6B21A8;" onclick="jumpToRegionSchedule('Yamagata')">
+              <div class="phase-days" style="background:#F3E8FF;color:#6B21A8;">Days 12–14<br><small>Nov 1–3 (3N)</small></div>
+              <div class="phase-info">
+                <h4>5. Tendo Onsen Hub: Yamadera (Risshakuji Temple) & Mogami River Boat Cruise</h4>
+                <p>3 nights at Tendo Central Hotel. Wrap up your 10-Day JR Pass on Day 12, climb the 1,015 stone steps of Yamadera, and cruise through the autumn canyons of the Mogami River.</p>
+              </div>
+              <span class="btn" style="font-size:11.5px;">View →</span>
+            </div>
+
+            <div class="phase-card" style="border-left-color:#9A3412;" onclick="jumpToRegionSchedule('Tochigi-Ibaraki')">
+              <div class="phase-days" style="background:#FFEDD5;color:#9A3412;">Days 15–17<br><small>Nov 4–6 (3N)</small></div>
+              <div class="phase-info">
+                <h4>6. Koga Hub: Nikko World Heritage (Toshogu & Shoyoen) & Oku-Nikko (Lake Chuzenji & Kegon Falls)</h4>
+                <p>3 nights at APA Hotel Ibaraki Koga Ekimae. Spend two full days exploring Nikko's UNESCO shrines, Rinnoji Shoyoen Garden at peak foliage, Irohazaka Winding Road, Lake Chuzenji, and Kegon Falls.</p>
+              </div>
+              <span class="btn" style="font-size:11.5px;">View →</span>
+            </div>
+
+            <div class="phase-card" style="border-left-color:#334155;" onclick="jumpToRegionSchedule('Tokyo')">
+              <div class="phase-days" style="background:#E2E8F0;color:#1E293B;">Days 18–22<br><small>Nov 7–11 (4N)</small></div>
+              <div class="phase-info">
+                <h4>7. Omiya (2N) & Tokyo Suidobashi (2N) → Narita Airport Departure (18:10)</h4>
+                <p>2 nights in Omiya to reorganize luggage, followed by 2 nights at APA Hotel Suidobashi Ekimae for central Tokyo shopping and dining before flying home from Narita at 18:10 on Nov 11.</p>
+              </div>
+              <span class="btn" style="font-size:11.5px;">View →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Map + Foliage Peak Matrix + Pre-Trip Checklist -->
+      <div>
+        <div class="section-card">
+          <h2>🗾 Interactive Tohoku, Nikko & Kanto Route Map</h2>
+          <p class="lead">Click any city pin on the map to filter the 22-Day Schedule to that region.</p>
+          <div class="route-svg-wrap">
+            <svg viewBox="0 0 340 450" width="100%" height="auto" aria-label="Tohoku, Nikko & Tokyo Route Map">
+              <path d="M170,22 L212,28 L222,64 L242,90 L236,148 L226,214 L210,280 L200,340 L174,392 L132,402 L112,355 L120,284 L128,218 L138,142 L144,75 Z"
+                    fill="#E5DEC9" stroke="#BFA98B" stroke-width="2" />
+              <path d="M166,360 L196,148" stroke="#246347" stroke-width="3.5" stroke-dasharray="5,3" fill="none" />
+              <path d="M196,148 L158,72 L186,62 L206,92 L196,148" stroke="#C83E2B" stroke-width="2.8" fill="none" />
+              <path d="M206,92 L198,230" stroke="#246347" stroke-width="3.5" fill="none" />
+              <path d="M198,230 L164,240" stroke="#246347" stroke-width="3" fill="none" />
+              <path d="M164,240 L170,326 L154,298" stroke="#1E3A5F" stroke-width="2.5" fill="none" />
+              <path d="M170,326 L166,360 L172,384" stroke="#1E3A5F" stroke-width="2.5" fill="none" />
+
+              <g class="map-node" onclick="jumpToRegionSchedule('Iwate-Aomori')">
+                <circle cx="158" cy="72" r="6.5" fill="#C83E2B" stroke="#FFF" stroke-width="2"/>
+                <text x="148" y="65" text-anchor="end" font-size="10.5" font-weight="800" fill="#1C252C">🍁 Hirosaki • Hakkoda • Tsutanuma</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Aomori')">
+                <circle cx="206" cy="92" r="7.5" fill="#C83E2B" stroke="#FFF" stroke-width="2"/>
+                <text x="216" y="95" text-anchor="start" font-size="10.5" font-weight="800" fill="#991B1B">♨️ Misawa • Aomoriya (2N)</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Iwate-Aomori')">
+                <circle cx="186" cy="110" r="5.5" fill="#246347" stroke="#FFF" stroke-width="1.5"/>
+                <text x="176" y="114" text-anchor="end" font-size="10" font-weight="700" fill="#166534">Oirase Gorge • Lake Towada</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Iwate-Aomori')">
+                <circle cx="196" cy="148" r="7.5" fill="#246347" stroke="#FFF" stroke-width="2"/>
+                <text x="208" y="152" text-anchor="start" font-size="10.5" font-weight="800" fill="#166534">🚄 Morioka Base (3N)</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Miyagi')">
+                <circle cx="198" cy="230" r="8" fill="#D97706" stroke="#FFF" stroke-width="2"/>
+                <text x="210" y="234" text-anchor="start" font-size="10.5" font-weight="800" fill="#92400E">🍁 Sendai • Naruko • Matsushima (4N)</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Yamagata')">
+                <circle cx="164" cy="240" r="7" fill="#6B21A8" stroke="#FFF" stroke-width="2"/>
+                <text x="152" y="244" text-anchor="end" font-size="10.5" font-weight="800" fill="#6B21A8">⛰️ Tendo • Yamadera • Mogami (3N)</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Tochigi-Ibaraki')">
+                <circle cx="154" cy="298" r="6.5" fill="#9A3412" stroke="#FFF" stroke-width="2"/>
+                <text x="142" y="302" text-anchor="end" font-size="10.5" font-weight="800" fill="#9A3412">⛩️ Nikko • Lake Chuzenji</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Tochigi-Ibaraki')">
+                <circle cx="170" cy="326" r="6.5" fill="#9A3412" stroke="#FFF" stroke-width="2"/>
+                <text x="182" y="329" text-anchor="start" font-size="10.5" font-weight="700" fill="#9A3412">Koga Base (3N)</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Saitama')">
+                <circle cx="166" cy="360" r="7" fill="#1E3A5F" stroke="#FFF" stroke-width="2"/>
+                <text x="152" y="363" text-anchor="end" font-size="10.5" font-weight="800" fill="#1E3A5F">Omiya Base (4N Total)</text>
+              </g>
+              <g class="map-node" onclick="jumpToRegionSchedule('Tokyo')">
+                <circle cx="172" cy="384" r="7.5" fill="#334155" stroke="#FFF" stroke-width="2"/>
+                <text x="184" y="388" text-anchor="start" font-size="10.5" font-weight="800" fill="#334155">🗼 Tokyo Suidobashi (2N)</text>
+              </g>
+            </svg>
+          </div>
+
+          <div style="margin-top:16px;">
+            <div style="font-weight:800;font-size:13.5px;margin-bottom:8px;">🍁 2026 Autumn Foliage Peak Timing Alignment</div>
+            <div class="data-table-wrap">
+              <table class="data-table" style="font-size:12px;">
+                <thead>
+                  <tr>
+                    <th>Visit Dates</th>
+                    <th>Foliage Destinations</th>
+                    <th>Typical Peak Window</th>
+                    <th>Alignment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Oct 23–25</td>
+                    <td>Hirosaki Park, Oirase Gorge, Tsutanuma & Mount Hakkoda</td>
+                    <td>Mid Oct – Early Nov</td>
+                    <td><span class="pass-badge" style="background:var(--accent-soft);color:var(--accent);">🍁 Peak Foliage</span></td>
+                  </tr>
+                  <tr>
+                    <td>Oct 29–31</td>
+                    <td>Naruko Gorge, Akiu Great Falls, Rairaikyo & Matsushima Entsuin</td>
+                    <td>Late Oct – Early Nov</td>
+                    <td><span class="pass-badge" style="background:var(--accent-soft);color:var(--accent);">🍁 Peak Foliage</span></td>
+                  </tr>
+                  <tr>
+                    <td>Nov 2–3</td>
+                    <td>Yamadera (Risshakuji Temple) & Mogami Gorge Boat Cruise</td>
+                    <td>Late Oct – Early Nov</td>
+                    <td><span class="pass-badge" style="background:var(--accent-soft);color:var(--accent);">🍁 Peak Foliage</span></td>
+                  </tr>
+                  <tr>
+                    <td>Nov 5–6</td>
+                    <td>Nikko Toshogu, Rinnoji Shoyoen Garden, Irohazaka & Lake Chuzenji</td>
+                    <td>Late Oct – Mid Nov</td>
+                    <td><span class="pass-badge" style="background:var(--accent-soft);color:var(--accent);">🍁 Peak Foliage</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Pre-Trip & Reservation Checklist Card -->
+        <div class="section-card" style="margin-top:22px;">
+          <h2>
+            <span>🎒 Pre-Trip & Reservation Checklist</span>
+            <span class="pass-badge" id="checklistProgressBadge" style="font-size:12px;">0 / 8 Done</span>
+          </h2>
+          <p class="lead" style="margin-bottom:12px;">
+            Click any item to mark it complete (automatically saved in your browser).
+          </p>
+          <div class="bar-track" style="height:8px;margin-bottom:14px;">
+            <div class="bar-fill" id="checklistProgressBar" style="width:0%;background:linear-gradient(90deg, var(--forest), #34D399);transition:width 0.25s ease;"></div>
+          </div>
+          <div id="prepChecklistGrid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:8px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 2: 22-DAY TIMELINE SCHEDULE -->
+  <section id="tab-itinerary" class="tab-pane">
+    <div class="filter-bar">
+      <div class="pill-group" id="regionFilters">
+        <button class="pill active" onclick="filterRegion('ALL', this)">All Days (22d)</button>
+        <button class="pill" onclick="filterRegion('Saitama', this)">Omiya • Saitama (4d)</button>
+        <button class="pill" onclick="filterRegion('Iwate-Aomori', this)">Morioka • Hirosaki • Oirase • Hakkoda (3d)</button>
+        <button class="pill" onclick="filterRegion('Aomori', this)">Misawa • Aomoriya (2d)</button>
+        <button class="pill" onclick="filterRegion('Miyagi', this)">Sendai • Naruko • Akiu • Matsushima (4d)</button>
+        <button class="pill" onclick="filterRegion('Yamagata', this)">Tendo • Yamadera • Mogami River (3d)</button>
+        <button class="pill" onclick="filterRegion('Tochigi-Ibaraki', this)">Koga • Nikko (3d)</button>
+        <button class="pill" onclick="filterRegion('Tokyo', this)">Tokyo • Suidobashi • Narita (3d)</button>
+      </div>
+      <input type="text" class="search-input" id="itinerarySearch" placeholder="Search places, hotels, or sights (e.g., Tsutanuma, Nikko, Yamadera)..." oninput="renderItineraryCards()">
+    </div>
+
+    <!-- Quick Day Jump Bar -->
+    <div class="day-jump-strip" id="dayJumpStrip"></div>
+
+    <div class="day-list" id="itineraryList"></div>
+  </section>
+
+  <!-- TAB 3: HOTELS & ACCOMMODATION LEDGER -->
+  <section id="tab-hotels" class="tab-pane">
+    <div class="section-card">
+      <h2>
+        <span>🏨 Hotel & Accommodation Ledger (All 7 Bases • 21 Nights Confirmed)</span>
+        <span style="font-size:14px;font-weight:800;color:var(--indigo);" id="hotelSummaryHeader">Total 21 Nights: ¥266,949 (S$2,188.11)</span>
+      </h2>
+      <p class="lead">
+        Complete breakdown of all 8 stays across 7 bases—Omiya, Morioka, Misawa (Hoshino Resorts Aomoriya), Sendai, Tendo Onsen, Koga, and Tokyo (Suidobashi)—including check-in/out dates, per-night rates, station walking access, and official booking pages.
+      </p>
+      <div class="hotel-grid" id="hotelGrid"></div>
+    </div>
+  </section>
+
+  <!-- TAB 4: BUDGET & EXPENSE ANALYTICS -->
+  <section id="tab-budget" class="tab-pane">
+    <div class="section-card">
+      <h2>
+        <span>📊 Category & Regional Expense Analytics</span>
+        <span style="font-size:12.5px;font-weight:600;color:var(--ink-muted);font-family:sans-serif;">Edit any figure in the table below to update charts and SGD conversions in real time</span>
+      </h2>
+      <p class="lead">
+        Your baseline trip budget (accommodations, round-trip flights, 10-Day JR East Pass, and dining/activities) is <strong>¥694,567 (S$5,693.17)</strong>. Adding post-pass JR fares (Days 13–18: ¥19,230) and local buses/ropeway (Days 5–10: ¥6,720) of <strong>¥25,950</strong> brings your all-in total budget to <strong>¥720,517 (S$5,905.88)</strong>.
+      </p>
+      <div class="overview-grid">
+        <div>
+          <h3 style="font-size:14px;font-weight:800;margin-bottom:10px;color:var(--ink);">1. Breakdown by Category (Stay / Fun & Food / Travel)</h3>
+          <div id="categoryBars"></div>
+        </div>
+        <div>
+          <h3 style="font-size:14px;font-weight:800;margin-bottom:10px;color:var(--ink);">2. Breakdown by Region (On-the-Ground Stay & Local Spend)</h3>
+          <div id="regionalBars"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <h2>
+        <span>💴 22-Day Expense Ledger (Directly Editable)</span>
+      </h2>
+      <div class="data-table-wrap">
+        <table class="data-table" id="budgetTable">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Date</th>
+              <th>Region</th>
+              <th>Itinerary & Destinations</th>
+              <th>Hotel</th>
+              <th class="num-col">Stay (¥)</th>
+              <th class="num-col">Travel (¥)</th>
+              <th class="num-col">Fun / Food (¥)</th>
+              <th class="num-col">Daily Total (¥)</th>
+              <th class="num-col">Daily Total (SGD)</th>
+            </tr>
+          </thead>
+          <tbody id="budgetTableBody"></tbody>
+          <tfoot id="budgetTableFoot"></tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 5: JR PASS & TRANSPORT OPTIMIZER -->
+  <section id="tab-rail" class="tab-pane">
+    <div class="section-card">
+      <h2>🚄 10-Day JR East Pass & Ground Transport Optimizer</h2>
+      <p class="lead">
+        Detailed leg-by-leg breakdown across Days 3–18 covering Shinkansen bullet trains, local JR lines, JR Bus Tohoku routes, municipal buses, and ropeways—plus an interactive simulator for your <strong>10-Day JR East Pass (Tohoku Area • ¥50,000)</strong>.
+      </p>
+
+      <div class="strategy-grid">
+        <div class="strategy-card optimal">
+          <span class="strategy-badge" style="background:var(--forest);color:#FFF;">★ Optimal Strategy (Active Plan)</span>
+          <h3 style="font-size:16px;margin-bottom:6px;">10-Day JR East Pass (Days 3–12) + Individual Tickets (Days 13–18)</h3>
+          <div style="font-size:24px;font-weight:800;color:var(--forest);margin:8px 0;">¥75,950 <small style="font-size:13px;color:var(--ink-muted);">(S$622.54)</small></div>
+          <ul style="font-size:12.5px;color:var(--ink-muted);padding-left:18px;line-height:1.6;">
+            <li><strong>Days 3–12 (Oct 23–Nov 1):</strong> Activate the <a href="https://www.jreast.co.jp/en/multi/pass/eastpass.html" target="_blank" rel="noopener">JR EAST PASS (Tohoku area, 10-Day • ¥50,000)</a>. Covers <strong>¥82,450</strong> worth of Shinkansen, local JR lines, and JR Bus Tohoku rides (Oirase Gorge, Lake Towada, Tsutanuma) for a net savings of <strong>¥32,450</strong>!</li>
+            <li><strong>Days 5, 6, 8, 9, 10 Non-JR Fares:</strong> <strong>¥6,720</strong> (Hakkoda Ropeway round-trip ¥2,500, Aoimori Railway ¥1,360*, Naruko Gorge Koyo-go Bus ¥800, Akiu Municipal Buses ¥2,060). <em>*Tip: The JR East Pass also covers local Aoimori Railway trains between Hachinohe and Misawa, saving you another ¥1,360!</em></li>
+            <li><strong>Days 13–18 (Nov 2–7):</strong> Pay via IC card/individual tickets for <strong>¥19,230</strong> total (Yamadera ¥1,040, Mogami River ¥2,460, Tendo→Koga ¥10,270, Koga↔Nikko 2 days ¥4,840, Koga→Omiya ¥620).</li>
+          </ul>
+        </div>
+
+        <div class="strategy-card">
+          <span class="strategy-badge" style="background:#E2E8F0;color:#334155;">Option 2: No Rail Pass (Point-to-Point Tickets)</span>
+          <h3 style="font-size:16px;margin-bottom:6px;">Buy Individual Tickets for All Days 3–18</h3>
+          <div style="font-size:24px;font-weight:800;color:var(--ink);margin:8px 0;">¥108,400 <small style="font-size:13px;color:var(--ink-muted);">(S$888.52)</small></div>
+          <ul style="font-size:12.5px;color:var(--ink-muted);padding-left:18px;line-height:1.6;">
+            <li><strong>JR Trains & JR Bus Total (Days 3–18):</strong> ¥101,680</li>
+            <li><strong>Non-JR Ropeway & Local Buses:</strong> ¥6,720</li>
+            <li><strong>Why the 10-Day Pass Wins:</strong> Using the 10-Day JR East Pass on Days 3–12 cuts your total ground transport bill from ¥108,400 down to ¥75,950—saving <strong>¥32,450 (S$265.98)</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="strategy-card">
+          <span class="strategy-badge" style="background:var(--gold-soft);color:#92400E;">Option 3: 10-Day Pass + 5-Day Pass Combo</span>
+          <h3 style="font-size:16px;margin-bottom:6px;">10-Day Pass (¥50,000) + 5-Day Pass (¥35,000)</h3>
+          <div style="font-size:24px;font-weight:800;color:#92400E;margin:8px 0;">¥92,340 <small style="font-size:13px;color:var(--ink-muted);">(S$756.89)</small></div>
+          <ul style="font-size:12.5px;color:var(--ink-muted);padding-left:18px;line-height:1.6;">
+            <li><strong>Days 13–17 JR Fares:</strong> Only <strong>¥18,610</strong> across those 5 days, so buying a second 5-Day JR East Pass (¥35,000) would lose <strong>¥16,390</strong>.</li>
+            <li><strong>Verdict:</strong> Stick with regular IC card/tickets from Day 13 (Nov 2) onward.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Interactive 10-Day Window Simulator -->
+      <div style="background:var(--surface-alt);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:18px;">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;">
+          <div>
+            <strong style="font-size:14px;">🎛️ 10-Day JR East Pass Start-Date Simulator:</strong>
+            <span style="font-size:12.5px;color:var(--ink-muted);margin-left:6px;">Compare covered JR fares and net savings across different activation days:</span>
+          </div>
+          <select id="passStartSelect" class="search-input" style="min-width:280px;font-weight:700;" onchange="renderRailTable()">
+            <option value="3" selected>Start Day 3 (Oct 23–Nov 1) • Optimal (Save ¥32,450)</option>
+            <option value="4">Start Day 4 (Oct 24–Nov 2) • Save ¥5,470</option>
+            <option value="5">Start Day 5 (Oct 25–Nov 3) • Lose ¥4,930</option>
+            <option value="6">Start Day 6 (Oct 26–Nov 4) • Lose ¥12,700</option>
+          </select>
+        </div>
+        <div id="passSimSummary" style="margin-top:10px;font-size:13px;font-weight:600;color:var(--indigo);"></div>
+      </div>
+
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Date</th>
+              <th>Travel Route</th>
+              <th>Leg-by-Leg Breakdown</th>
+              <th>Pass Status</th>
+              <th class="num-col">JR Only (¥)</th>
+              <th class="num-col">Non-JR (¥)</th>
+              <th class="num-col">All Legs (¥)</th>
+              <th class="num-col">Out-of-Pocket (¥)</th>
+            </tr>
+          </thead>
+          <tbody id="railTableBody"></tbody>
+          <tfoot id="railTableFoot"></tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 6: REGIONAL GOURMET GUIDE -->
+  <section id="tab-gourmet" class="tab-pane">
+    <div class="section-card">
+      <h2>
+        <span>🍜 Tohoku & Nikko Regional Gourmet Guide (Tabelog Ratings & Public Transit Access)</span>
+        <div class="pill-group" id="foodRegionPills">
+          <button class="pill active" onclick="filterFood('ALL', this)">All Spots (24)</button>
+          <button class="pill" onclick="filterFood('Aomori & Morioka', this)">Aomori • Morioka • Hirosaki • Hachinohe (8)</button>
+          <button class="pill" onclick="filterFood('Sendai & Matsushima', this)">Sendai & Matsushima (7)</button>
+          <button class="pill" onclick="filterFood('Yamagata, Tendo & Yamadera', this)">Yamagata • Tendo • Yamadera (4)</button>
+          <button class="pill" onclick="filterFood('Nikko', this)">Nikko & Lake Chuzenji (5)</button>
+          <button class="pill" onclick="filterFood('EASY_ONLY', this)">🟢 Station Walkable Only</button>
+        </div>
+      </h2>
+      <p class="lead">
+        All 24 regional specialties across Aomori, Morioka, Hirosaki, Hachinohe, Sendai, Yamagata, Tendo, Yamadera, and Nikko (excluding Tokyo)—complete with <strong>Tabelog ratings</strong>, visual score bars, and <strong>public transport accessibility badges</strong> (walkable from train stations vs bus transfers).
+      </p>
+
+      <!-- Add Custom Food Spot -->
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;background:var(--surface-alt);padding:12px;border-radius:10px;">
+        <select id="newFoodRegion" class="search-input" style="min-width:170px;">
+          <option value="Aomori & Morioka">Aomori & Morioka</option>
+          <option value="Sendai & Matsushima">Sendai & Matsushima</option>
+          <option value="Yamagata, Tendo & Yamadera">Yamagata, Tendo & Yamadera</option>
+          <option value="Nikko">Nikko</option>
+        </select>
+        <input type="text" id="newFoodDish" class="search-input" placeholder="Specialty Dish (e.g., Zunda Shake)">
+        <input type="text" id="newFoodPlace" class="search-input" placeholder="Restaurant Name (e.g., Zunda Saryo Sendai)">
+        <input type="text" id="newFoodRating" class="search-input" placeholder="Tabelog Score (e.g., 3.58)" style="min-width:140px;">
+        <input type="text" id="newFoodAccess" class="search-input" placeholder="Transit Access (e.g., 1 min walk inside JR Sendai Station)" style="flex:1;">
+        <button class="btn btn-primary" onclick="addCustomFood()">+ Add Gourmet Spot</button>
+      </div>
+
+      <div class="gourmet-grid" id="gourmetGrid"></div>
+    </div>
+  </section>
+
+  <!-- TAB 7: ACCESS (Bus & Boat Transfer Timetables) -->
+  <section id="tab-access" class="tab-pane">
+    <div class="section-card">
+      <h2>
+        <span>🚌 Bus & Boat Transfer Timetables (Editable & Removable)</span>
+        <div class="pill-group">
+          <button class="pill active" onclick="filterAccess('ALL', this)">All Areas</button>
+          <button class="pill" onclick="filterAccess('Aomori, Hirosaki, Hachinohe & Misawa', this)">Aomori • Hirosaki • Hachinohe • Misawa</button>
+          <button class="pill" onclick="filterAccess('Sendai, Naruko Gorge & Akiu', this)">Sendai • Naruko Gorge • Akiu</button>
+          <button class="pill" onclick="filterAccess('Yamagata & Mogami River', this)">Yamagata & Mogami River</button>
+          <button class="pill" onclick="filterAccess('Nikko & Lake Chuzenji', this)">Nikko & Lake Chuzenji</button>
+        </div>
+      </h2>
+      <p class="lead">
+        Destinations located right outside a JR station (such as Yamadera Station or Matsushima-Kaigan Station) are omitted so you only see <strong>routes requiring a bus or boat transfer</strong>. You can edit any note, add new timetable links, or remove rows anytime with the Delete button.
+      </p>
+
+      <!-- Add Access Link Form -->
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;background:var(--surface-alt);padding:12px;border-radius:10px;">
+        <select id="newAccessArea" class="search-input" style="min-width:190px;">
+          <option value="Aomori, Hirosaki, Hachinohe & Misawa">Aomori, Hirosaki, Hachinohe & Misawa</option>
+          <option value="Sendai, Naruko Gorge & Akiu">Sendai, Naruko Gorge & Akiu</option>
+          <option value="Yamagata & Mogami River">Yamagata & Mogami River</option>
+          <option value="Nikko & Lake Chuzenji">Nikko & Lake Chuzenji</option>
+        </select>
+        <input type="text" id="newAccessPlace" class="search-input" placeholder="Route / Destination Name" style="min-width:220px;">
+        <input type="text" id="newAccessUrl" class="search-input" placeholder="Timetable URL (https://...)" style="flex:1;">
+        <input type="text" id="newAccessNote" class="search-input" placeholder="Platform, duration & fare notes" style="min-width:220px;">
+        <button class="btn btn-primary" onclick="addAccessRow()">+ Add Timetable Link</button>
+      </div>
+
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Target Day</th>
+              <th>Route & Destination (Directly Editable)</th>
+              <th>Timetable & Platform Link</th>
+              <th>Transfer, Platform & Fare Notes (Directly Editable)</th>
+              <th>Category</th>
+              <th style="width:90px;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="accessTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 8: GUIDES & NIKKO AUTUMN FOLIAGE MASTERPLAN -->
+  <section id="tab-guides" class="tab-pane">
+    <div class="section-card">
+      <h2>🍁 Nikko 2-Day Autumn Foliage & Tobu Bus Masterplan (World Heritage & Oku-Nikko)</h2>
+      <p class="lead">
+        Recommended 2-day bus & walking itinerary from <strong>Koga Station ↔ JR Nikko / Tobu Nikko Station</strong> for Day 16 (Thu, Nov 5) and Day 17 (Fri, Nov 6)—timed for the early-November peak of Rinnoji Shoyoen Garden, Nikko Toshogu Shrine, and the Irohazaka Winding Road.
+      </p>
+      <div class="strategy-grid">
+        <div class="strategy-card optimal">
+          <span class="strategy-badge" style="background:var(--accent);color:#FFF;">Day 16 (Thu, Nov 5) Recommended Route</span>
+          <h3 style="font-size:16px;margin-bottom:6px;">UNESCO World Heritage Shrines & Rinnoji Shoyoen Garden Foliage Walk</h3>
+          <ul style="font-size:12.5px;color:var(--ink-muted);padding-left:18px;line-height:1.65;">
+            <li><strong>09:30 Arrive at JR Nikko / Tobu Nikko Station:</strong> Grab a hot Fried Yuba Manju (sweet bean bun in crispy tofu skin with rock salt) right outside the station at <em>Nikko Sakaeya</em>.</li>
+            <li><strong>10:00 Shinkyo Sacred Bridge:</strong> Ride the World Heritage Sightseeing Bus (Stop 2B) to "Shinkyo" and photograph the vermilion bridge framed by the autumn foliage of the Daiya River gorge.</li>
+            <li><strong>11:00 Rinnoji Temple & Shoyoen Japanese Garden:</strong> Early November is the exact peak season for the historic Edo-period maple garden at Shoyoen.</li>
+            <li><strong>12:15 Lunch:</strong> Dine on Omelet Rice & Nirvana Cheesecake at <em>Meiji no Yakata</em> (inside the shrine grounds) or yuba (tofu skin) specialties at <em>Hipparidako</em> or <em>Uoyo</em>.</li>
+            <li><strong>13:30 Nikko Toshogu Shrine, Futarasan Shrine & Taiyuin:</strong> Explore the lavishly carved Yomeimon Gate, Sleeping Cat, and forest trails before taking the JR Nikko Line back to Koga.</li>
+          </ul>
+        </div>
+
+        <div class="strategy-card">
+          <span class="strategy-badge" style="background:var(--indigo);color:#FFF;">Day 17 (Fri, Nov 6) Recommended Route</span>
+          <h3 style="font-size:16px;margin-bottom:6px;">Irohazaka Winding Road, Lake Chuzenji, Kegon Falls & Ryuzu Falls</h3>
+          <ul style="font-size:12.5px;color:var(--ink-muted);padding-left:18px;line-height:1.65;">
+            <li><strong>Value Bus Pass:</strong> Pick up the <em>Chuzenji Onsen Free Pass (¥2,300)</em> or <em>Yumoto Onsen Free Pass (¥3,500)</em> at the Tobu Nikko Station Tourist Center.</li>
+            <li><strong>08:30–09:00 Early Departure Rule:</strong> Board an early Yumoto Onsen-bound Tobu Bus from JR/Tobu Nikko Station (Stop 2A) to beat autumn traffic up the 48-hairpin Irohazaka Winding Road.</li>
+            <li><strong>10:00 Chuzenji Onsen Bus Stop (~48 min):</strong> Walk 5 minutes to <strong>Kegon Falls</strong> (take the elevator down to the gorge viewing deck) and stroll along the autumn shores of <strong>Lake Chuzenji</strong>. Enjoy handmade yuba soba for lunch at lakeside <em>Teuchi Soba Katsura</em>.</li>
+            <li><strong>13:00 Extend to Oku-Nikko:</strong> Ride the bus 15 minutes further to <strong>Ryuzu Falls (Dragon Head Waterfall)</strong> and <strong>Senjogahara Marshland</strong>.<br><em style="color:var(--accent);">*Note: Because the Akechidaira Ropeway is suspended in 2026, focusing directly on Lake Chuzenji, Kegon Falls, and Ryuzu Falls gives you the smoothest experience.</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <h2>
+        <span>📖 Sightseeing & Autumn Foliage Guides (Editable & Removable)</span>
+        <div class="pill-group">
+          <button class="pill active" onclick="filterGuides('ALL', this)">All Regions</button>
+          <button class="pill" onclick="filterGuides('Aomori, Hirosaki, Towada & Misawa', this)">Aomori • Hirosaki • Towada • Misawa</button>
+          <button class="pill" onclick="filterGuides('Sendai, Naruko, Akiu & Matsushima', this)">Sendai • Naruko • Akiu • Matsushima</button>
+          <button class="pill" onclick="filterGuides('Yamagata, Yamadera & Mogami River', this)">Yamagata • Yamadera • Mogami River</button>
+          <button class="pill" onclick="filterGuides('Nikko, Lake Chuzenji & Oku-Nikko', this)">Nikko • Lake Chuzenji • Oku-Nikko</button>
+        </div>
+      </h2>
+      <p class="lead">
+        Curated online sightseeing guides, gorge trail maps, evening illumination schedules, and Nikko autumn foliage routes. All entries can be edited, deleted, or expanded with your own links.
+      </p>
+
+      <!-- Add Guide Form -->
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;background:var(--surface-alt);padding:12px;border-radius:10px;">
+        <select id="newGuideArea" class="search-input" style="min-width:190px;">
+          <option value="Aomori, Hirosaki, Towada & Misawa">Aomori, Hirosaki, Towada & Misawa</option>
+          <option value="Sendai, Naruko, Akiu & Matsushima">Sendai, Naruko, Akiu & Matsushima</option>
+          <option value="Yamagata, Yamadera & Mogami River">Yamagata, Yamadera & Mogami River</option>
+          <option value="Nikko, Lake Chuzenji & Oku-Nikko">Nikko, Lake Chuzenji & Oku-Nikko</option>
+        </select>
+        <input type="text" id="newGuideLocation" class="search-input" placeholder="Destination / Trail Name" style="min-width:220px;">
+        <input type="text" id="newGuideUrl" class="search-input" placeholder="Guide URL (https://...)" style="flex:1;">
+        <input type="text" id="newGuideNote" class="search-input" placeholder="Highlights & autumn foliage notes" style="min-width:220px;">
+        <button class="btn btn-primary" onclick="addGuideRow()">+ Add Guide</button>
+      </div>
+
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>Target Day</th>
+              <th>Destination & Trail Guide (Directly Editable)</th>
+              <th>Open Guide</th>
+              <th>Highlights & Autumn Route Notes (Directly Editable)</th>
+              <th>Category</th>
+              <th style="width:90px;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="guidesTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+// 1. 22-Day Master Itinerary Data (100% English)
+const DEFAULT_DAYS = [
+  {
+    day: 1, dow: "Wed", date: "2026-10-21", region: "Saitama",
+    routeJp: "Singapore → Tokyo (Haneda Airport 09:50 Arrival) → Omiya",
+    routeEn: "Arrive at Haneda Airport (09:50), ride the Keikyu Line & JR Ueno-Tokyo Line north to Omiya Station",
+    stay: 6000, travelBase: 56059, travelActualAdd: 0, fun: 0,
+    hotel: "Ritz Carlton Omiya (Omiya Base)", hotelUrl: "",
+    passCovered: false, needsAttention: false,
+    jrOnly: 0, totalAllLegs: 0,
+    legs: ["Singapore (Changi Airport) → Tokyo (Haneda Airport) (Half of round-trip airfare: ¥56,059)"],
+    tip: "Exchange your 10-Day JR East Pass (Tohoku Area, starting Friday Oct 23) at Haneda Airport or JR Omiya Station today so you can board the early morning Shinkansen smoothly on Day 3."
+  },
+  {
+    day: 2, dow: "Thu", date: "2026-10-22", region: "Saitama",
+    routeJp: "Omiya (Saitama & Greater Tokyo Exploration)",
+    routeEn: "Explore Omiya Bonsai Village, The Railway Museum, Musashi Ichinomiya Hikawa Shrine, or central Tokyo",
+    stay: 6000, travelBase: 0, travelActualAdd: 0, fun: 132000,
+    hotel: "Ritz Carlton Omiya (Omiya Base)", hotelUrl: "",
+    passCovered: false, needsAttention: false,
+    jrOnly: 0, totalAllLegs: 0,
+    legs: ["Local transit around Omiya / Tokyo"],
+    tip: "¥132,000 dining, leisure, and shopping budget allocated here. Prep a light overnight bag or organize luggage before heading up to Northern Tohoku tomorrow."
+  },
+  {
+    day: 3, dow: "Fri", date: "2026-10-23", region: "Iwate-Aomori",
+    routeJp: "Omiya → Morioka ↔ Hirosaki (Hirosaki Park & Castle)",
+    routeEn: "Tohoku Shinkansen from Omiya to Morioka (drop luggage at hotel), then Shinkansen + JR Ou Main Line to Hirosaki round-trip",
+    stay: 8467, travelBase: 5000, travelActualAdd: 0, fun: 0,
+    hotel: "APA Hotel Morioka Ekimae",
+    hotelUrl: "https://www3.apahotel.com/hotel/hokkaido-tohoku/iwate/morioka-ekimae/",
+    passCovered: true, needsAttention: false,
+    jrOnly: 28020, totalAllLegs: 28020,
+    legs: ["Omiya / Tokyo → Morioka (¥14,380)", "Morioka → Hirosaki (¥6,820)", "Hirosaki → Morioka (¥6,820)"],
+    tip: "Day 1 of your 10-Day JR East Pass! Today alone covers ¥28,020 in JR fares. Enjoy the Hirosaki Castle Chrysanthemum & Autumn Foliage Festival and compare 6–8 local apple pies at Taisho Roman Tea Room."
+  },
+  {
+    day: 4, dow: "Sat", date: "2026-10-24", region: "Iwate-Aomori",
+    routeJp: "Morioka ↔ Hachinohe ↔ Oirase Gorge & Lake Towada",
+    routeEn: "Morioka → Hachinohe Station West Exit → JR Bus Tohoku 'Oirase-go' to Kumoi-no-Taki Waterfall, Oirase Gorge hike & Lake Towada (Yasumiya)",
+    stay: 8467, travelBase: 5000, travelActualAdd: 0, fun: 0,
+    hotel: "APA Hotel Morioka Ekimae",
+    hotelUrl: "https://www3.apahotel.com/hotel/hokkaido-tohoku/iwate/morioka-ekimae/",
+    passCovered: true, needsAttention: false,
+    jrOnly: 12860, totalAllLegs: 12860,
+    legs: ["Morioka → Hachinohe (¥3,660)", "Hachinohe → Kumoi-no-Taki [Oirase Gorge] (JR Bus ¥2,490)", "Lake Towada [Yasumiya] → Hachinohe (JR Bus ¥3,050)", "Hachinohe → Morioka (¥3,660)"],
+    tip: "Day 2 of your JR East Pass. Both the Tohoku Shinkansen and the JR Bus Tohoku 'Oirase-go' (Hachinohe ↔ Oirase Gorge ↔ Lake Towada) are 100% covered by your pass!"
+  },
+  {
+    day: 5, dow: "Sun", date: "2026-10-25", region: "Iwate-Aomori",
+    routeJp: "Morioka ↔ Aomori ↔ Tsutanuma Pond ↔ Hakkoda Ropeway & Jogakura Bridge",
+    routeEn: "Morioka → Aomori Station → JR Bus Tohoku 'Mizuumi-go' to Hakkoda Ropeway & Tsuta Onsen (Tsutanuma Pond) → Return to Morioka",
+    stay: 8467, travelBase: 5000, travelActualAdd: 2500, fun: 0,
+    hotel: "APA Hotel Morioka Ekimae",
+    hotelUrl: "https://www3.apahotel.com/hotel/hokkaido-tohoku/iwate/morioka-ekimae/",
+    passCovered: true, needsAttention: true,
+    jrOnly: 18040, totalAllLegs: 20540,
+    legs: ["Morioka → Aomori (¥6,490)", "Aomori → Hakkoda Ropeway Station (JR Bus ¥1,290)", "Hakkoda Ropeway Round-Trip (¥2,500 • Non-Pass)", "Hakkoda Ropeway → Tsuta Onsen [Tsutanuma] (JR Bus ¥1,370)", "Tsuta Onsen [Tsutanuma] → Aomori → Morioka (¥8,890)"],
+    tip: "Day 3 of your JR East Pass. The JR Bus 'Mizuumi-go' is covered by the pass; only the Hakkoda Ropeway round-trip (¥2,500) is out-of-pocket. Stop by Aomori Gyosai Center (5 min walk from Aomori Station) for a custom Nokkedon seafood bowl!"
+  },
+  {
+    day: 6, dow: "Mon", date: "2026-10-26", region: "Aomori",
+    routeJp: "Morioka → Hachinohe → Misawa (Hoshino Resorts Aomoriya)",
+    routeEn: "Tohoku Shinkansen from Morioka to Hachinohe, then Aoimori Railway to Misawa Station for check-in at Hoshino Resorts Aomoriya",
+    stay: 56800, travelBase: 5000, travelActualAdd: 680, fun: 0,
+    hotel: "Hoshino Resorts Aomoriya",
+    hotelUrl: "https://hoshinoresorts.com/en/hotels/aomoriya/",
+    passCovered: true, needsAttention: false,
+    jrOnly: 3660, totalAllLegs: 4340,
+    legs: ["Morioka → Hachinohe (¥3,660)", "Hachinohe → Misawa (Aoimori Railway ¥680 • Non-Pass)"],
+    tip: "Day 4 of your JR East Pass. Bonus tip: the JR East Pass actually covers local Aoimori Railway trains between Hachinohe, Misawa, and Aomori, so you can ride for ¥0 just by showing your pass! Aomoriya is a 15-min walk or free shuttle ride from Misawa Station."
+  },
+  {
+    day: 7, dow: "Tue", date: "2026-10-27", region: "Aomori",
+    routeJp: "Misawa (Full Day at Hoshino Resorts Aomoriya / Optional Hachinohe Trip)",
+    routeEn: "Relax in Aomoriya's Shibusawa Park and Ukiyu open-air onsen, or take a quick 20-min train ride to Hachinohe (Hasshoku Center & Minato Shokudo)",
+    stay: 56800, travelBase: 5000, travelActualAdd: 0, fun: 0,
+    hotel: "Hoshino Resorts Aomoriya",
+    hotelUrl: "https://hoshinoresorts.com/en/hotels/aomoriya/",
+    passCovered: true, needsAttention: false,
+    jrOnly: 0, totalAllLegs: 0,
+    legs: ["Misawa Resort Stay (Optional: Misawa ↔ Hachinohe • Hasshoku Center Shichirin-mura • ¥0 Train with Pass)"],
+    tip: "Day 5 of your JR East Pass. Enjoy Aomoriya's apple juice tap, footbaths, and evening Michinoku Matsuriya Nebuta show—or pop over to Hachinohe Station and take the ¥100 bus to Hasshoku Center for charcoal-grilled seafood."
+  },
+  {
+    day: 8, dow: "Wed", date: "2026-10-28", region: "Miyagi",
+    routeJp: "Misawa → Hachinohe → Sendai",
+    routeEn: "Travel from Misawa via Hachinohe on the Tohoku Shinkansen Hayabusa to Sendai (start of 4-night Sendai stay)",
+    stay: 9700, travelBase: 5000, travelActualAdd: 680, fun: 0,
+    hotel: "APA Hotel Sendai Eki Itsutsubashi",
+    hotelUrl: "https://www3.apahotel.com/hotel/hokkaido-tohoku/miyagi/sendaieki-itsutsubashi",
+    passCovered: true, needsAttention: false,
+    jrOnly: 9460, totalAllLegs: 10140,
+    legs: ["Misawa → Hachinohe (Aoimori Railway ¥680 • Non-Pass)", "Hachinohe → Sendai (Tohoku Shinkansen ¥9,460)"],
+    tip: "Day 6 of your JR East Pass. After checking in at Sendai, head to Gyutan Ryori Kaku for charcoal-grilled beef tongue, Murakamiya Mochiten (6 min walk from your hotel) for zunda mochi, or Ichibangoro in Iroha Yokocho Alley for Sendai Aoba Gyoza."
+  },
+  {
+    day: 9, dow: "Thu", date: "2026-10-29", region: "Miyagi",
+    routeJp: "Sendai ↔ Furukawa ↔ Naruko-Onsen ↔ Naruko Gorge",
+    routeEn: "Tohoku Shinkansen (Sendai → Furukawa) + JR Rikuu East Line (Furukawa → Naruko-Onsen) + Seasonal 'Koyo-go' Bus to Naruko Gorge",
+    stay: 9700, travelBase: 5000, travelActualAdd: 800, fun: 0,
+    hotel: "APA Hotel Sendai Eki Itsutsubashi",
+    hotelUrl: "https://www3.apahotel.com/hotel/hokkaido-tohoku/miyagi/sendaieki-itsutsubashi",
+    passCovered: true, needsAttention: false,
+    jrOnly: 7600, totalAllLegs: 8400,
+    legs: ["Sendai ↔ Naruko-Onsen (Shinkansen + JR Rikuu East Line Round-Trip ¥7,600)", "Naruko-Onsen Station ↔ Naruko Gorge Nakayamadaira-guchi ('Koyo-go' Bus Round-Trip ¥800–¥900 • Non-Pass)"],
+    tip: "Day 7 of your JR East Pass. The 2026 Naruko Gorge seasonal 'Koyo-go' bus runs daily from Oct 26 to Nov 8 (¥450 one-way, cash only). Don't miss the iconic view from Ofukazawa Bridge over the 100m-deep canyon!"
+  },
+  {
+    day: 10, dow: "Fri", date: "2026-10-30", region: "Miyagi",
+    routeJp: "Sendai ↔ Ayashi → Akiu Great Falls → Akiu Sato Center (Rairaikyo Gorge)",
+    routeEn: "JR Senzan Line to Ayashi Station → Sendai Municipal Bus (Stop 2) to Akiu Great Falls → Bus to Akiu Sato Center (Rairaikyo Gorge) → Ayashi Station",
+    stay: 9700, travelBase: 5000, travelActualAdd: 2060, fun: 0,
+    hotel: "APA Hotel Sendai Eki Itsutsubashi",
+    hotelUrl: "https://www3.apahotel.com/hotel/hokkaido-tohoku/miyagi/sendaieki-itsutsubashi",
+    passCovered: true, needsAttention: false,
+    jrOnly: 700, totalAllLegs: 2760,
+    legs: ["Sendai ↔ Ayashi (JR Senzan Line Round-Trip ¥700)", "Ayashi Station → Akiu Great Falls (Municipal Bus ¥840 • Non-Pass)", "Akiu Great Falls → Akiu Sato Center [Rairaikyo] (Bus ¥730 • Non-Pass)", "Akiu Sato Center → Ayashi Station (Bus ¥490 • Non-Pass)"],
+    tip: "Day 8 of your JR East Pass. Use the Sendai Municipal Bus timetable links in Tab 7 (Bus Timetables) for exact departure times from Ayashi Station Stop 2. Tonight is ideal for autumn salmon & roe Harako-meshi at Arahama Asuto Nagamachi (open Thu–Mon)!"
+  },
+  {
+    day: 11, dow: "Sat", date: "2026-10-31", region: "Miyagi",
+    routeJp: "Sendai ↔ Matsushima-Kaigan (Entsuin Temple, Zuiganji & Matsushima Bay)",
+    routeEn: "JR Senseki Line from Sendai to Matsushima-Kaigan Station (5-min walk to Entsuin & Zuiganji Temple autumn gardens and evening illumination)",
+    stay: 9700, travelBase: 5000, travelActualAdd: 0, fun: 1500,
+    hotel: "APA Hotel Sendai Eki Itsutsubashi",
+    hotelUrl: "https://www3.apahotel.com/hotel/hokkaido-tohoku/miyagi/sendaieki-itsutsubashi",
+    passCovered: true, needsAttention: false,
+    jrOnly: 880, totalAllLegs: 880,
+    legs: ["Sendai ↔ Matsushima-Kaigan (JR Senseki Line Round-Trip ¥880)"],
+    tip: "Day 9 of your JR East Pass. Entsuin Temple is just a 5-minute walk from JR Matsushima-Kaigan Station (no bus transfer needed). ¥1,500 is budgeted for Entsuin admission and the autumn foliage light-up."
+  },
+  {
+    day: 12, dow: "Sun", date: "2026-11-01", region: "Yamagata",
+    routeJp: "Sendai → Yamagata (Tendo Onsen)",
+    routeEn: "JR Senzan Line & Ou Main Line from Sendai to Yamagata and Tendo Station (start of 3-night Tendo Onsen stay)",
+    stay: 5549, travelBase: 5000, travelActualAdd: 0, fun: 0,
+    hotel: "Tendo Central Hotel",
+    hotelUrl: "https://www.japanican.com/hotel/japan/yamagata/tendo-central-hotel",
+    passCovered: true, needsAttention: false,
+    jrOnly: 1230, totalAllLegs: 1230,
+    legs: ["Sendai → Tendo (JR Senzan Line & Ou Main Line ¥1,230)"],
+    tip: "Final Day 10 of your JR East Pass! Walk 8 minutes from Tendo Central Hotel to historic Teuchi Suisha Kisoba (founded 1861) to try their famous Original Tori-Chuka (chicken ramen in soba dashi) and Itasoba."
+  },
+  {
+    day: 13, dow: "Mon", date: "2026-11-02", region: "Yamagata",
+    routeJp: "Tendo ↔ Yamadera (Risshakuji Temple)",
+    routeEn: "Tendo → Uzen-Chitose → Yamadera Station (climb the 1,015 stone steps to Godaido Hall for panoramic autumn valley views)",
+    stay: 5549, travelBase: 0, travelActualAdd: 1040, fun: 0,
+    hotel: "Tendo Central Hotel",
+    hotelUrl: "https://www.japanican.com/hotel/japan/yamagata/tendo-central-hotel",
+    passCovered: false, needsAttention: false,
+    jrOnly: 1040, totalAllLegs: 1040,
+    legs: ["Tendo ↔ Yamadera (JR Round-Trip ¥520 × 2 = ¥1,040 • Post-Pass)"],
+    tip: "The trailhead for Yamadera is a 5-minute walk from JR Yamadera Station (no bus required). Before climbing, fuel up on piping-hot Chikara Konnyaku (soy-braised konjac balls) and Yamagata Imoni (taro & beef stew) along Fumoto-dori Street!"
+  },
+  {
+    day: 14, dow: "Tue", date: "2026-11-03", region: "Yamagata",
+    routeJp: "Tendo ↔ Mogami River (Furukuchi • Mogami Gorge Basho Line Boat Cruise)",
+    routeEn: "Tendo → Shinjo → Furukuchi Station (5-min walk to Tozawa Clan Boat Station for the 1-hour Mogami Gorge autumn foliage boat ride to Kusanagi Onsen)",
+    stay: 5549, travelBase: 0, travelActualAdd: 2460, fun: 0,
+    hotel: "Tendo Central Hotel",
+    hotelUrl: "https://www.japanican.com/hotel/japan/yamagata/tendo-central-hotel",
+    passCovered: false, needsAttention: false,
+    jrOnly: 2460, totalAllLegs: 2460,
+    legs: ["Tendo ↔ Furukuchi [Mogami River] (JR Ou Main Line & Rikuu West Line Round-Trip ¥1,230 × 2 = ¥2,460 • Post-Pass)"],
+    tip: "Nov 3 is Culture Day (national holiday). After disembarking at Mogamikyo Kusanagi, take the local return bus back to Furukuchi Station (timetable linked in Tab 7)."
+  },
+  {
+    day: 15, dow: "Wed", date: "2026-11-04", region: "Tochigi-Ibaraki",
+    routeJp: "Tendo → Oyama → Koga (Nikko Sightseeing Base)",
+    routeEn: "Yamagata Shinkansen Tsubasa from Tendo to Oyama Station, then 2 stops on the JR Utsunomiya Line to Koga Station (start of 3-night Koga stay)",
+    stay: 6667, travelBase: 0, travelActualAdd: 10270, fun: 0,
+    hotel: "APA Hotel Ibaraki Koga Ekimae",
+    hotelUrl: "https://www3.apahotel.com/hotel/syutoken/ibaraki/ibaraki-koga-ekimae/",
+    passCovered: false, needsAttention: false,
+    jrOnly: 10270, totalAllLegs: 10270,
+    legs: ["Tendo / Yamagata → Koga (Yamagata Shinkansen + JR Utsunomiya Line ¥10,270 • Post-Pass)"],
+    tip: "Ride the Yamagata Shinkansen to Oyama Station and transfer to the JR Utsunomiya Line for Koga Station (APA Hotel is a 5-min walk from the East Exit). Rest up for two full days in Nikko."
+  },
+  {
+    day: 16, dow: "Thu", date: "2026-11-05", region: "Tochigi-Ibaraki",
+    routeJp: "Koga ↔ Nikko (World Heritage Shrines, Shinkyo Bridge & Rinnoji Shoyoen Garden)",
+    routeEn: "Koga → Utsunomiya → JR Nikko Station (World Heritage Bus to Shinkyo Bridge, Rinnoji Temple, Nikko Toshogu & Futarasan Shrine)",
+    stay: 6667, travelBase: 0, travelActualAdd: 2420, fun: 0,
+    hotel: "APA Hotel Ibaraki Koga Ekimae",
+    hotelUrl: "https://www3.apahotel.com/hotel/syutoken/ibaraki/ibaraki-koga-ekimae/",
+    passCovered: false, needsAttention: false,
+    jrOnly: 2420, totalAllLegs: 2420,
+    legs: ["Koga ↔ Nikko (JR Utsunomiya Line & Nikko Line Round-Trip ¥1,210 × 2 = ¥2,420 • Post-Pass)"],
+    tip: "Early November is peak maple foliage at Rinnoji Temple's Shoyoen Garden and around Toshogu Shrine! Check Tabs 7 and 8 for Tobu Bus Nikko timetables and the full Day 16 walking route."
+  },
+  {
+    day: 17, dow: "Fri", date: "2026-11-06", region: "Tochigi-Ibaraki",
+    routeJp: "Koga ↔ Nikko (Irohazaka Winding Road, Lake Chuzenji, Kegon Falls & Ryuzu Falls)",
+    routeEn: "Koga → JR Nikko Station → Tobu Bus (Yumoto Onsen-bound) up Irohazaka to Chuzenji Onsen, Kegon Falls & Ryuzu Falls",
+    stay: 6667, travelBase: 0, travelActualAdd: 2420, fun: 0,
+    hotel: "APA Hotel Ibaraki Koga Ekimae",
+    hotelUrl: "https://www3.apahotel.com/hotel/syutoken/ibaraki/ibaraki-koga-ekimae/",
+    passCovered: false, needsAttention: false,
+    jrOnly: 2420, totalAllLegs: 2420,
+    legs: ["Koga ↔ Nikko (JR Utsunomiya Line & Nikko Line Round-Trip ¥1,210 × 2 = ¥2,420 • Post-Pass)"],
+    tip: "Grab a Tobu Bus Chuzenji Onsen Free Pass (¥2,300) at the station and depart before 09:00 to beat Irohazaka traffic. Enjoy handmade yuba soba for lunch overlooking Lake Chuzenji at Teuchi Soba Katsura!"
+  },
+  {
+    day: 18, dow: "Sat", date: "2026-11-07", region: "Saitama",
+    routeJp: "Koga → Omiya",
+    routeEn: "Direct 35-minute ride south on the JR Utsunomiya Line from Koga Station to Omiya Station (¥620)",
+    stay: 6000, travelBase: 0, travelActualAdd: 620, fun: 0,
+    hotel: "Ritz Carlton Omiya (Omiya Base)", hotelUrl: "",
+    passCovered: false, needsAttention: false,
+    jrOnly: 620, totalAllLegs: 620,
+    legs: ["Koga → Omiya (JR Utsunomiya Line ¥620 • Post-Pass)"],
+    tip: "Direct 35-minute train ride with no transfers from Koga Station back to Omiya Station (IC fare ¥620)."
+  },
+  {
+    day: 19, dow: "Sun", date: "2026-11-08", region: "Saitama",
+    routeJp: "Omiya (Rest & Luggage Consolidation)",
+    routeEn: "Relax in Omiya and organize souvenirs before moving into central Tokyo (Suidobashi) tomorrow",
+    stay: 6000, travelBase: 0, travelActualAdd: 0, fun: 0,
+    hotel: "Ritz Carlton Omiya (Omiya Base)", hotelUrl: "",
+    passCovered: false, needsAttention: false,
+    jrOnly: 0, totalAllLegs: 0,
+    legs: ["Local transit around Omiya"],
+    tip: "Consolidate all your Tohoku and Nikko souvenirs in Omiya so you can enjoy your final two nights in central Tokyo hassle-free."
+  },
+  {
+    day: 20, dow: "Mon", date: "2026-11-09", region: "Tokyo",
+    routeJp: "Tokyo (Suidobashi Base • Day 1)",
+    routeEn: "Travel from Omiya to Suidobashi and check in at APA Hotel Suidobashi Ekimae (1-min walk from JR Suidobashi Station West Exit)",
+    stay: 14250, travelBase: 0, travelActualAdd: 0, fun: 0,
+    hotel: "APA Hotel Suidobashi Ekimae",
+    hotelUrl: "https://www3.apahotel.com/hotel/syutoken/tokyo/suidobashi-ekimae/",
+    passCovered: false, needsAttention: false,
+    jrOnly: 0, totalAllLegs: 0,
+    legs: ["Omiya → Suidobashi (JR Keihin-Tohoku / Ueno-Tokyo Line & Chuo-Sobu Line)"],
+    tip: "2-night central Tokyo stay at APA Hotel Suidobashi Ekimae (¥14,250/night). Right next to Koishikawa Korakuen Garden, one of Tokyo's finest traditional landscape gardens."
+  },
+  {
+    day: 21, dow: "Tue", date: "2026-11-10", region: "Tokyo",
+    routeJp: "Tokyo (Suidobashi Base • Day 2)",
+    routeEn: "Full day of Tokyo shopping and dining (direct Chuo-Sobu Line & Toei Mita Line access to Shinjuku, Akihabara, and Tokyo Station)",
+    stay: 14250, travelBase: 0, travelActualAdd: 0, fun: 0,
+    hotel: "APA Hotel Suidobashi Ekimae",
+    hotelUrl: "https://www3.apahotel.com/hotel/syutoken/tokyo/suidobashi-ekimae/",
+    passCovered: false, needsAttention: false,
+    jrOnly: 0, totalAllLegs: 0,
+    legs: ["Tokyo Metro & JR local lines"],
+    tip: "Final full day in Tokyo for last-minute shopping and dining."
+  },
+  {
+    day: 22, dow: "Wed", date: "2026-11-11", region: "Tokyo",
+    routeJp: "Tokyo (Narita Airport) → Singapore (18:10 Departure)",
+    routeEn: "Suidobashi → Tokyo Station or Nippori/Keisei Ueno → Narita Airport for your 18:10 flight home to Singapore",
+    stay: 0, travelBase: 56059, travelActualAdd: 0, fun: 132000,
+    hotel: "Departure Day (18:10 Flight from Narita Airport)", hotelUrl: "",
+    passCovered: false, needsAttention: false,
+    jrOnly: 0, totalAllLegs: 0,
+    legs: ["Tokyo (Narita Airport) → Singapore (Half of round-trip airfare: ¥56,059)", "Suidobashi → Narita Airport (Narita Express from Tokyo Station or Keisei Skyliner from Nippori)"],
+    tip: "With an 18:10 evening flight, you have a relaxed morning in Tokyo. Catch the Narita Express (from Tokyo Station) or Keisei Skyliner (from Nippori/Ueno) around 14:00 to reach Narita Airport by 15:00."
+  }
+];
+
+// 2. Curated Regional Gourmet List (24 Spots in English with Tabelog Ratings & Public Transit Badges; No Tokyo)
+const DEFAULT_FOOD = [
+  // Aomori, Morioka, Hirosaki & Hachinohe (8 spots)
+  {
+    id: 1, region: "Aomori & Morioka",
+    dish: "Original Aomori Nokkedon (Build-Your-Own Seafood Bowl)",
+    place: "Aomori Gyosai Center Main Market (Furukawa Fish Market)",
+    url: "https://nokkedon.jp/",
+    tabelogScore: "★ 3.46 (Market) / Jalan 4.0",
+    tabelogUrl: "https://autoreserve.com/en/jp/aomori/aomori-2-station/sea-food-don",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 5-min walk (350m) from JR Aomori Station East Exit",
+    sourceTag: "Must-Try Pick (Aomori)",
+    note: "Ideal during your Day 5 (Oct 25) transfer at Aomori Station or Day 7. Buy a 12-ticket meal voucher (¥2,200) and stroll through ~30 market stalls topping warm rice with Aomori scallops, Oma tuna, sea urchin, and salmon roe.",
+    tried: false
+  },
+  {
+    id: 2, region: "Aomori & Morioka",
+    dish: "Wanko Soba (All-You-Can-Eat Bite-Sized Buckwheat Noodles)",
+    place: "Sobadokoro Azumaya Morioka Ekimae Branch / Main Branch",
+    url: "https://wankosoba.jp/",
+    tabelogScore: "★ 3.53 (Main) / 3.00 (Station)",
+    tabelogUrl: "https://autoreserve.com/zh-tw/restaurants/vE9LDnsaNurHmpukcnLG",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 3-min walk from JR Morioka Station (right across from APA Hotel Morioka Ekimae!)",
+    sourceTag: "Must-Try Pick (Morioka)",
+    note: "Founded in 1907. Servers rhythmically refill your bowl with bite-sized soba portions while chanting 'Hai, jan-jan!' Eat 100 bowls (roughly 6–7 regular bowls) to earn a commemorative wooden plaque.",
+    tried: false
+  },
+  {
+    id: 3, region: "Aomori & Morioka",
+    dish: "Charcoal-Grilled Seafood BBQ & Hachinohe Senbei-jiru Soup",
+    place: "Hasshoku Center Shichirin-mura",
+    url: "https://www.849net.com/shichirin-mura/",
+    tabelogScore: "★ 3.47 (Hasshoku Center 3.43)",
+    tabelogUrl: "https://autoreserve.com/ja/restaurants/S9GphYLdPLhCLd2z14xW",
+    transitLevel: "bus",
+    transitText: "🟡 Direct Bus: 10 min on the 'Hasshoku ¥100 Bus' from JR Hachinohe Station East Exit Stop 4 (timetable in Tab 7)",
+    sourceTag: "Must-Try Pick (Hachinohe)",
+    note: "Easy stop on Days 4, 6, 7, or 8 via Hachinohe Station! Pick up fresh scallops, squid, oysters, and prawns from 60 market stalls and grill them immediately over charcoal braziers (¥400 table fee per adult).",
+    tried: false
+  },
+  {
+    id: 4, region: "Aomori & Morioka",
+    dish: "Hirosaki Apple Pie Tasting Flight (6–8 Local Bakery Varieties)",
+    place: "Taisho Roman Tea Room (Fujita Memorial Garden)",
+    url: "https://www.hirosaki-kanko.or.jp/edit.html?id=taishoroman_cafe",
+    tabelogScore: "★ 3.53 (Intl Reviews 3.69)",
+    tabelogUrl: "https://autoreserve.com/ja/restaurants/52NN38H4Yc8Bcs9WrqbX",
+    transitLevel: "bus",
+    transitText: "🟡 Loop Bus: 15 min on Dotemachi ¥100 Loop Bus from JR Hirosaki Station Stop 6 to 'Shiyakusho-mae', then 3-min walk",
+    sourceTag: "Must-Try Pick (Hirosaki)",
+    note: "Located right next to Hirosaki Park for Day 3 (Oct 23)! Relax in a 1921 Western-style red-roofed villa sunroom and compare slices of Hirosaki's best apple pies (Tamura Farm, Angelique, Noa, and more) with apple tea or cider.",
+    tried: false
+  },
+  {
+    id: 5, region: "Aomori & Morioka",
+    dish: "Morioka Reimen (Cold Elastic Noodles in Beef Broth) & Iwate Yakiniku",
+    place: "Pyonpyonsha Morioka Ekimae Branch",
+    url: "https://www.pyonpyonsya.co.jp/shop/shop02/",
+    tabelogScore: "★ 3.58",
+    tabelogUrl: "https://autoreserve.com/ja/restaurants/h8g4r2t41SV8LaVu7YMB",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 2-min walk (140m) from JR Morioka Station (1 min from APA Hotel Morioka Ekimae)",
+    sourceTag: "Top Local Favorite (Morioka)",
+    note: "Rich beef-and-chicken consommé broth with freshly extruded chewy noodles, crisp house kimchi, and seasonal pear/apple. Open until 23:00—perfect for dinner after returning from Hirosaki, Oirase Gorge, or Tsutanuma!",
+    tried: false
+  },
+  {
+    id: 6, region: "Aomori & Morioka",
+    dish: "Original Morioka Jajamen (Flat Noodles with Miso Meat Sauce + Chitantan Egg Soup)",
+    place: "Pairon (Hakuryu) Fesan Station Branch / Main Shop",
+    url: "https://www.pairon.iwate.jp/shop.html",
+    tabelogScore: "★ 3.52 (Tabelog Top 100 Selected)",
+    tabelogUrl: "https://www.pairon.iwate.jp/shop.html",
+    transitLevel: "easy",
+    transitText: "🟢 Inside Station: Fesan Branch is directly inside JR Morioka Station Building 'Odense-kan' 1F (0-min walk)",
+    sourceTag: "Top Local Favorite (Morioka)",
+    note: "The third of Morioka's Three Great Noodles. Toss warm flat udon-style noodles with savory sesame-miso meat paste, cucumber, ginger, vinegar, and chili oil—then crack a raw egg into the bowl for hot 'Chitantan' soup at the end.",
+    tried: false
+  },
+  {
+    id: 7, region: "Aomori & Morioka",
+    dish: "Miso Curry Milk Ramen (with Butter)",
+    place: "Aji no Sapporo Onishi (Aomori City)",
+    url: "https://r.gnavi.co.jp/61mzdyzp0000/",
+    tabelogScore: "★ 3.55 (Retty Popular Star Shop)",
+    tabelogUrl: "https://retty.me/area/PRE02/ARE159/SUB15901/100000030848/",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 8-min walk from JR Aomori Station East Exit (3 min from Aomori Gyosai Center)",
+    sourceTag: "Top Local Favorite (Aomori)",
+    note: "Aomori City's beloved soul food! Rich miso, fragrant curry spice, creamy milk, and melting butter come together in a surprisingly balanced, warming bowl after a chilly autumn day on Mount Hakkoda.",
+    tried: false
+  },
+  {
+    id: 8, region: "Aomori & Morioka",
+    dish: "Hachinohe Marinated Flounder Bowl (Hirame Zuke-don & Senbei-jiru Set)",
+    place: "Minato Shokudo (Hachinohe • Mutsu-Minato)",
+    url: "https://r.gnavi.co.jp/bhap23dw0000/",
+    tabelogScore: "★ 3.65 (Tabelog Top 100 Diner • Jalan 4.3)",
+    tabelogUrl: "https://www.jalan.net/gourmet/grm_alikejpB000402561/",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 5-min walk from JR Hachinohe Line 'Mutsu-Minato Station' (covered by JR East Pass)",
+    sourceTag: "Top Local Favorite (Hachinohe)",
+    note: "Glistening slices of sweet-soy marinated flounder layered over hot rice with a raw egg yolk in the center. Open 06:00–14:30—an unforgettable brunch trip on Day 7 from Misawa.",
+    tried: false
+  },
+
+  // Sendai & Matsushima (7 spots)
+  {
+    id: 9, region: "Sendai & Matsushima",
+    dish: "Sendai Mabo Yakisoba (Crispy Pan-Fried Noodles Topped with Mapo Tofu)",
+    place: "Chugoku Saikan Manmi Izumi-Chuo (Birthplace of Mabo Yakisoba)",
+    url: "https://www.manmi-sendai.com/",
+    tabelogScore: "★ 3.42 (Jalan 4.3 • Retty Popular)",
+    tabelogUrl: "https://r.gnavi.co.jp/1rnjjewf0000/",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 4-min walk from Sendai Subway Namboku Line 'Izumi-Chuo Station' West Exit 1 (direct subway from Itsutsubashi)",
+    sourceTag: "Must-Try Pick (Sendai)",
+    note: "Founded in 1972 and creator of Sendai's signature B-grade gourmet dish, Mabo Yakisoba! Steamed and seared noodles smothered in savory, spicy mapo tofu (also has a branch directly connected to Nagamachi-Minami Station).",
+    tried: false
+  },
+  {
+    id: 10, region: "Sendai & Matsushima",
+    dish: "Charcoal-Grilled Aged Gyutan (Beef Tongue) & Gyutan Tataki",
+    place: "Gyutan Ryori Kaku Denryoku Building / Brandome Main Shop",
+    url: "https://gyutankaku.in/",
+    tabelogScore: "★ 3.81 (Denryoku Bldg) / ★ 4.07 (Main • Bib Gourmand)",
+    tabelogUrl: "https://autoreserve.com/en/restaurants/DQCnV8V2GLX74r3shouG",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 1-min walk from Subway 'Hirose-dori Station' West Exit 3 (12-min walk from JR Sendai Station)",
+    sourceTag: "Must-Try Pick (Sendai)",
+    note: "Michelin Bib Gourmand & Tabelog Top 5000 beef tongue specialist. Famous for its diamond-scored, unbelievably crisp-yet-juicy charcoal-grilled beef tongue, oxtail soup, barley rice, and evening-only seared beef tongue tataki.",
+    tried: false
+  },
+  {
+    id: 11, region: "Sendai & Matsushima",
+    dish: "Sendai Aoba Gyoza (Green Yukina-Leaf Dumplings)",
+    place: "Ichibangoro (Iroha Yokocho Alley • Sunmall Ichibancho)",
+    url: "https://autoreserve.com/en/jp/miyagi/sendai-shi-aoba-ku/gyoza",
+    tabelogScore: "★ 3.46",
+    tabelogUrl: "https://autoreserve.com/en/jp/miyagi/sendai-shi-aoba-ku/gyoza",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 4-min walk from Subway Tozai Line 'Aoba-dori Ichibancho Station' (10-min walk from APA Hotel Itsutsubashi)",
+    sourceTag: "Must-Try Pick (Sendai)",
+    note: "Tucked inside nostalgic postwar Iroha Yokocho Alley. Their emerald-green wrappers are kneaded with local Sendai yukina snow greens and stuffed with Miyagi pork and vegetables.",
+    tried: false
+  },
+  {
+    id: 12, region: "Sendai & Matsushima",
+    dish: "Sankaku Jogi Abura-age (Giant Crispy Fried Triangular Tofu)",
+    place: "Jogi Tofu Shop (At the Gate of Jogi Nyorai Saihoji Temple)",
+    url: "https://www.sankaku-age.jp/Transportation.html",
+    tabelogScore: "★ 3.58 (Jalan 4.4 [982 reviews])",
+    tabelogUrl: "https://japantravel.navitime.com/en/area/jp/spot/02301-2600343/",
+    transitLevel: "far",
+    transitText: "🟠 Bus Excursion: Sendai Municipal Bus #844/845/846 from JR Sendai Station West Exit Stop 10 or JR Ayashi Station to 'Jogi' terminal (~75 min from Sendai • timetable in Tab 7)",
+    sourceTag: "Must-Try Pick (Sendai)",
+    note: "Sells over 10,000 golden-fried tofu triangles a day, sprinkled with garlic-seven-spice and soy sauce! (*Pro Tip: If you don't want to ride the mountain bus, 'Gyutan Ryori Kaku' in downtown Sendai serves charcoal-grilled Jogi Triangular Abura-age as a ¥682 side dish!)",
+    tried: false
+  },
+  {
+    id: 13, region: "Sendai & Matsushima",
+    dish: "Autumn-Only Watari Specialty Harako-meshi (Salmon & Ikura Seasoned Rice)",
+    place: "Shungyo Sushi no Mise Arahama (Asuto Nagamachi Branch)",
+    url: "https://www.arahama.jp/nagamachi.html",
+    tabelogScore: "★ 3.42 (Watari Main Shop is Tabelog Top 100)",
+    tabelogUrl: "https://autoreserve.com/ja/restaurants/EdYKGCNx5XCjppYnjUF8",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 3-min walk (270m) from JR / Subway Namboku Line 'Nagamachi Station' (3 subway stops / 6 min from Itsutsubashi)",
+    sourceTag: "Must-Try Pick (Sendai)",
+    note: "Miyagi's ultimate autumn delicacy (served Sep–Nov only)! Fragrant rice cooked in salmon broth and crowned with tender autumn salmon fillets and glistening ikura roe (*closed Tue & Wed; visit on Thu Day 9, Fri Day 10, or Sat Day 11).",
+    tried: false
+  },
+  {
+    id: 14, region: "Sendai & Matsushima",
+    dish: "Original Three-Color Mochi (Zunda Edamame, Black Sesame & Walnut)",
+    place: "Murakamiya Mochiten (Kitame-machi)",
+    url: "https://autoreserve.com/ja/restaurants/MVdtuGqaB5hfj5bDvT22",
+    tabelogScore: "★ 3.70 (Tabelog Top 100 Wagashi & Sweets)",
+    tabelogUrl: "https://autoreserve.com/ja/restaurants/MVdtuGqaB5hfj5bDvT22",
+    transitLevel: "easy",
+    transitText: "🟢 Hotel Walkable: 6-min walk (530m) from Subway 'Itsutsubashi Station' (right near APA Hotel Sendai Eki Itsutsubashi!)",
+    sourceTag: "Top Local Favorite (Sendai)",
+    note: "Founded in 1877, Sendai's highest-rated traditional mochi parlor. Freshly pounded rice cakes coated to order in vibrant crushed edamame zunda paste (*open Fri, Sat & Sun only—perfect for Day 10 or Day 11!).",
+    tried: false
+  },
+  {
+    id: 15, region: "Sendai & Matsushima",
+    dish: "Thick-Cut Shin-Chutan (Prime Center-Cut Beef Tongue Set)",
+    place: "Tanya Zenjiro Sendai Station Main Shop",
+    url: "https://autoreserve.com/en/restaurants/DQCnV8V2GLX74r3shouG",
+    tabelogScore: "★ 3.73",
+    tabelogUrl: "https://autoreserve.com/en/restaurants/DQCnV8V2GLX74r3shouG",
+    transitLevel: "easy",
+    transitText: "🟢 Station Connected: 2-min walk along the pedestrian deck from JR Sendai Station West Exit",
+    sourceTag: "Top Local Favorite (Sendai)",
+    note: "Open continuously from lunch through late evening right outside Sendai Station, making it effortless to visit after returning from Naruko Gorge, Akiu, or Matsushima.",
+    tried: false
+  },
+
+  // Yamagata, Tendo & Yamadera (4 spots)
+  {
+    id: 16, region: "Yamagata, Tendo & Yamadera",
+    dish: "Original Tori-Chuka (Chicken Ramen in Soba Dashi) & Shogunate Itasoba",
+    place: "Teuchi Suisha Kisoba (Tendo Onsen)",
+    url: "https://suisyasoba.com/access/",
+    tabelogScore: "★ 3.58 (Ramen DB 90.0 • Jalan 4.1)",
+    tabelogUrl: "https://r.gnavi.co.jp/9r6ug4gg0000/",
+    transitLevel: "easy",
+    transitText: "🟢 Hotel & Station Walkable: 10-min walk from JR Tendo Station East Exit (8-min walk from Tendo Central Hotel)",
+    sourceTag: "Must-Try Pick (Tendo)",
+    note: "Founded in 1861. Creator of Yamagata's famous 'Original Tori-Chuka' (curly ramen noodles in a peppery Japanese bonito-kelp soba broth topped with chicken and tenkasu, ¥870) alongside rustic wooden-box 'Itasoba'.",
+    tried: false
+  },
+  {
+    id: 17, region: "Yamagata, Tendo & Yamadera",
+    dish: "Yamagata Imoni Stew, Chikara Konnyaku Balls & Yamadera Soba",
+    place: "Yamadera Taimenseki & Fumoto-dori Street Shops (Matoya, Mitoya, etc.)",
+    url: "https://www.japan-guide.com/e/e7940.html",
+    tabelogScore: "★ 3.40",
+    tabelogUrl: "https://www.japan-guide.com/e/e7940.html",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: 2–5 min walk from JR Senzan Line 'Yamadera Station' (right at the temple trailhead)",
+    sourceTag: "Must-Try Pick (Yamadera)",
+    note: "Located along the base of Yamadera for Day 13 (Nov 2). Grab a skewer of steaming soy-and-squid-braised 'Chikara Konnyaku' balls and a bowl of Yamagata beef-and-taro 'Imoni' before or after climbing the 1,015 steps!",
+    tried: false
+  },
+  {
+    id: 18, region: "Yamagata, Tendo & Yamadera",
+    dish: "Yamagata Cold Niku-Soba (Buckwheat Noodles in Chilled Savory Chicken Broth)",
+    place: "YamagataChotto-tei (or Kahoku-cho Iroha Honten)",
+    url: "https://www.osobaya.com/",
+    tabelogScore: "★ 3.54 (Yamagata Branch) / Retty Star",
+    tabelogUrl: "https://autoreserve.com/en/restaurants/EeevzmGoS1ydRwzytEjR",
+    transitLevel: "bus",
+    transitText: "🟡 Walk / Bus: 'Yamagata Chotto-tei' is a 12-min walk from JR Kita-Yamagata Station (Kahoku-cho main shop requires a bus/taxi)",
+    sourceTag: "Must-Try Pick (Yamagata)",
+    note: "Yamagata's signature chilled soba in a crystal-clear, savory-sweet chicken broth topped with firm parent-hen chicken slices and scallions. Easily accessible by train at the Yamagata City branch.",
+    tried: false
+  },
+  {
+    id: 19, region: "Yamagata, Tendo & Yamadera",
+    dish: "Aimori Itasoba (Two-Tone Rustic & Refined Buckwheat Noodles on Wooden Tray)",
+    place: "Sobadokoro Shojiya Yamagata Main Shop / Gotenzeki Nanokamachi",
+    url: "https://www.shojiya.jp/",
+    tabelogScore: "★ 3.66 (Main Shop) / ★ 3.50 (Nanokamachi)",
+    tabelogUrl: "https://autoreserve.com/en/restaurants/EeevzmGoS1ydRwzytEjR",
+    transitLevel: "easy",
+    transitText: "🟢 Station Walkable: Main Shop is a 10-min walk from JR Yamagata Station East Exit",
+    sourceTag: "Top Local Favorite (Yamagata)",
+    note: "Founded in 1864, Yamagata City's oldest soba house. Their 'Aimori Itasoba' pairs dark, aromatic whole-buckwheat Inaka Soba with snow-white Sarashina Soba on a traditional wooden board.",
+    tried: false
+  },
+
+  // Nikko & Lake Chuzenji (5 spots)
+  {
+    id: 20, region: "Nikko",
+    dish: "Nikko Age-Yuba Manju (Crispy Fried Tofu-Skin Sweet Bun with Rock Salt)",
+    place: "Nikko Sakaeya Age-Yuba Manju Honpo",
+    url: "https://japantravel.navitime.com/en/area/jp/spot/02301-12700175/",
+    tabelogScore: "★ 3.57 (Jalan 4.3 • Trip.com 4.4)",
+    tabelogUrl: "https://autoreserve.com/en/restaurants/G7a9vXabRAHNorpKzLW4",
+    transitLevel: "easy",
+    transitText: "🟢 Right Outside Station: 1-min walk from Tobu Nikko Station / 3-min walk from JR Nikko Station",
+    sourceTag: "Must-Try Pick (Nikko)",
+    note: "Nikko's #1 street snack! Smooth red bean paste wrapped in soymilk yuba skin, deep-fried until crisp, and finished with a pinch of Okinawan rock salt for an addictive sweet-salty crunch (cash only).",
+    tried: false
+  },
+  {
+    id: 21, region: "Nikko",
+    dish: "Yuba-don (Simmered Tofu Skin Rice Bowl), Yuba Udon & Charcoal Yakitori",
+    place: "Hipparidako (Near Shinkyo Sacred Bridge)",
+    url: "https://gfem000.gorp.jp/",
+    tabelogScore: "★ 3.41",
+    tabelogUrl: "https://r.gnavi.co.jp/7y2jnye20000/",
+    transitLevel: "bus",
+    transitText: "🟡 On Sightseeing Route: 5-min Tobu Bus ride from JR/Tobu Nikko Station to 'Shinkyo' or 'Sogokaikan-mae', then 2-min walk",
+    sourceTag: "Must-Try Pick (Nikko)",
+    note: "Cozy, welcoming eatery plastered with notes from travelers around the world, located right near Shinkyo Bridge at the entrance to the World Heritage shrines. Famous for silky Nikko Yuba-don and giant yakitori skewers.",
+    tried: false
+  },
+  {
+    id: 22, region: "Nikko",
+    dish: "Lakeside Handmade Yuba Soba & Fresh Sobagaki Buckwheat Dumpling",
+    place: "Teuchi Soba Katsura (Lake Chuzenji Shore)",
+    url: "https://gem4000.gorp.jp/",
+    tabelogScore: "★ 3.39",
+    tabelogUrl: "https://autoreserve.com/ja/restaurants/e62oGrUM5Rm9b8TWehKV",
+    transitLevel: "bus",
+    transitText: "🟡 Bus Transfer: ~48 min on Tobu Bus from JR/Tobu Nikko Station to 'Chuzenji Onsen', then 5-min walk (near Kegon Falls)",
+    sourceTag: "Must-Try Pick (Lake Chuzenji)",
+    note: "Perfect lunch spot on Day 17 (Nov 6) while visiting Kegon Falls and Lake Chuzenji! Second-floor window seats overlook the autumn foliage around Lake Chuzenji while you enjoy stone-milled handmade yuba soba.",
+    tried: false
+  },
+  {
+    id: 23, region: "Nikko",
+    dish: "Omelet Rice & Signature 'Nirvana' Cheesecake",
+    place: "Seiyo Ryori Meiji no Yakata (Inside Toshogu Grounds & Tobu Station Shop)",
+    url: "https://www.meiji-yakata.com/ja/meiji/",
+    tabelogScore: "★ 3.55 (Tabelog Top 100 Western Restaurant)",
+    tabelogUrl: "https://autoreserve.com/en/restaurants/G7a9vXabRAHNorpKzLW4",
+    transitLevel: "easy",
+    transitText: "🟢 Inside Shrine Grounds / Station: Main stone mansion is a 3-min walk from Toshogu Shrine; Cake Shop is a 1-min walk from Tobu Nikko Station",
+    sourceTag: "Top Local Favorite (Nikko)",
+    note: "Housed in a Meiji-era registered cultural heritage stone mansion right beside Rinnoji and Toshogu. Famous for creamy shrimp-and-mushroom Omelet Rice and rich Danish cream-cheese 'Nirvana' cheesecake.",
+    tried: false
+  },
+  {
+    id: 24, region: "Nikko",
+    dish: "Original Three-Variety Yuba Soba (Fresh, Flat & Rolled Fried Yuba)",
+    place: "Teuchi Kisoba Uoyo (Near Shinkyo Bridge)",
+    url: "http://www.e-nikko.org/shop_detail755.shtml",
+    tabelogScore: "★ 3.45",
+    tabelogUrl: "http://www.e-nikko.org/shop_detail755.shtml",
+    transitLevel: "easy",
+    transitText: "🟢 Walk / Bus: 12-min walk from Tobu Nikko Station or 3-min walk from 'Shinkyo' Bus Stop",
+    sourceTag: "Top Local Favorite (Nikko)",
+    note: "Historic originator of Nikko Yuba Soba, stone-grinding local Nikko buckwheat in-house and topping each bowl with three distinct styles of Nikko tofu skin (zenmai-rolled age-maki yuba, flat hira-yuba, and fresh nama-yuba).",
+    tried: false
+  }
+];
+
+// 3. Access Links (All 14 Bus & Boat Transfer Timetables in English)
+const DEFAULT_ACCESS = [
+  // Aomori, Hirosaki, Hachinohe & Misawa
+  {
+    id: "acc1", area: "Aomori, Hirosaki, Hachinohe & Misawa", day: "Days 4–5 (Oct 24–25)",
+    place: "Hachinohe Station / Aomori Station ↔ Oirase Gorge & Lake Towada (JR Bus Tohoku Oirase-go & Mizuumi-go)",
+    url: "https://www.jrbustohoku.co.jp/towadako-oirase/en/#fare",
+    note: "Departs from JR Hachinohe Station West Exit & JR Aomori Station. Fully covered (¥0) by your 10-Day JR East Pass.",
+    isExisting: true
+  },
+  {
+    id: "acc2", area: "Aomori, Hirosaki, Hachinohe & Misawa", day: "Day 5 (Oct 25)",
+    place: "Aomori Station / Shin-Aomori Station ↔ Hakkoda Ropeway & Tsutanuma Pond (Tsuta Onsen) Bus Timetable",
+    url: "https://bus-tabi.net/pref/aomori/aomori-tsutanuma/",
+    note: "Complete timetable and transfer guide for Aomori Station ↔ Hakkoda Ropeway ↔ Tsuta Onsen (Tsutanuma).",
+    isExisting: true
+  },
+  {
+    id: "acc3", area: "Aomori, Hirosaki, Hachinohe & Misawa", day: "Day 3 (Oct 23)",
+    place: "JR Hirosaki Station (Central Exit Stop 6) → Hirosaki Park / City Hall (Konan Bus Dotemachi Loop Bus Timetable)",
+    url: "https://www.hirosaki-kanko.or.jp/en/edit.html?id=100-yen_bus",
+    note: "Runs every ~10 minutes from 10:00 to 17:00. Alight at 'Shiyakusho-mae' (City Hall) for Hirosaki Park Otemon Gate and Fujita Memorial Garden.",
+    isExisting: false
+  },
+  {
+    id: "acc4", area: "Aomori, Hirosaki, Hachinohe & Misawa", day: "Days 6–8 (Oct 26–28)",
+    place: "Misawa Station ↔ Hoshino Resorts Aomoriya (Free Shuttle Bus & Walking Access Guide)",
+    url: "https://hoshinoresorts.com/en/hotels/aomoriya/access/",
+    note: "15-minute walk from Aoimori Railway 'Misawa Station', or free complimentary shuttle bus (book on the official site at least 3 days in advance).",
+    isExisting: false
+  },
+  {
+    id: "acc5", area: "Aomori, Hirosaki, Hachinohe & Misawa", day: "Days 4, 6, 7 & 8",
+    place: "JR Hachinohe Station (East Exit Stop 4) ↔ Hasshoku Center (Nanbu Bus 'Hasshoku ¥100 Bus' Timetable)",
+    url: "https://japantravel.navitime.com/en/area/jp/railroad/00045155/",
+    note: "¥100 one-way, ~10 minutes direct from Hachinohe Station to Hasshoku Center & Shichirin-mura charcoal grill.",
+    isExisting: false
+  },
+
+  // Sendai, Naruko Gorge & Akiu
+  {
+    id: "acc6", area: "Sendai, Naruko Gorge & Akiu", day: "Day 10 (Oct 30)",
+    place: "JR Ayashi Station (Bus Stop 2) → Akiu Great Falls (Sendai Municipal Bus Official Timetable)",
+    url: "https://www.navi.kotsu.city.sendai.jp/dia/bustime/bus/result.cgi?FreeSelectCode=8226&FreeSelectSeq=13&FreeNoribaName=02",
+    note: "Departs JR Senzan Line 'Ayashi Station' Bus Stop 2 bound for Akiu Great Falls (Akiu Otaki, fare ¥840).",
+    isExisting: true
+  },
+  {
+    id: "acc7", area: "Sendai, Naruko Gorge & Akiu", day: "Day 10 (Oct 30)",
+    place: "Akiu Great Falls → Akiu Sato Center [Rairaikyo Gorge] & Ayashi Station (Sendai Municipal Bus Timetable)",
+    url: "https://www.navi.kotsu.city.sendai.jp/dia/bustime/bus/result.cgi?FreeSelectCode=8665&FreeSelectSeq=*",
+    note: "Return bus timetable from Akiu Great Falls toward Akiu Sato Center (Rairaikyo Gorge, fare ¥730) and Ayashi Station.",
+    isExisting: true
+  },
+  {
+    id: "acc8", area: "Sendai, Naruko Gorge & Akiu", day: "Day 10 (Oct 30)",
+    place: "Akiu Sato Center [Rairaikyo Gorge] → JR Ayashi Station (Sendai Municipal Bus Timetable)",
+    url: "https://www.navi.kotsu.city.sendai.jp/dia/bustime/bus/result.cgi?FreeSelectCode=8627&FreeSelectSeq=*&FreeNoribaName=",
+    note: "Bus timetable from Akiu Sato Center back to JR Ayashi Station after walking the Rairaikyo Gorge trail (fare ¥490).",
+    isExisting: true
+  },
+  {
+    id: "acc9", area: "Sendai, Naruko Gorge & Akiu", day: "Day 9 (Oct 29)",
+    place: "JR Naruko-Onsen Station ↔ Naruko Gorge Nakayamadaira-guchi ↔ Nakayamadaira-Onsen (Seasonal 'Koyo-go' Bus 2026 Timetable)",
+    url: "https://www.welcome-naruko.jp/information/%E9%B3%B4%E5%AD%90%E5%B3%A1%E6%A1%88%E5%86%85%E5%9B%B3%EF%BC%86%E3%83%90%E3%82%B9%E6%99%82%E5%88%BB2026",
+    note: "Operates daily from Oct 26 to Nov 8, 2026! Naruko-Onsen Station ↔ Naruko Gorge Nakayamadaira-guchi is ¥450 one-way (cash only, ~10 min).",
+    isExisting: false
+  },
+  {
+    id: "acc10", area: "Sendai, Naruko Gorge & Akiu", day: "Days 8–11",
+    place: "Sendai Station (West Exit Stop 10/14) & Ayashi Station ↔ Jogi [Jogi Tofu Shop] (Sendai Municipal Bus #844/845/846 Timetable)",
+    url: "https://www.navi.kotsu.city.sendai.jp/dia/bustime/bus/result_length.cgi?Code=50&Noriba=14&Seq=57",
+    note: "Direct bus timetable if visiting Jogi Tofu Shop in the mountains (~75 min from Sendai Station, ~40 min from Ayashi Station).",
+    isExisting: false
+  },
+
+  // Yamagata & Mogami River
+  {
+    id: "acc11", area: "Yamagata & Mogami River", day: "Day 14 (Nov 3)",
+    place: "Mogamikyo Kusanagi (Disembarkation Pier) → Furukuchi Station [Boarding Pier] (Mogamigawa Kotsu Return Bus Timetable)",
+    url: "https://www.mogamigawa-bus.com/en/timetable",
+    note: "Board the boat 5 min on foot from JR Furukuchi Station; after the 60-min downstream cruise to Kusanagi, take this connecting bus back to JR Furukuchi Station.",
+    isExisting: false
+  },
+  {
+    id: "acc12", area: "Yamagata & Mogami River", day: "Day 14 (Nov 3)",
+    place: "Mogami Gorge Basho Line Boat Cruise (Regular Boat Departure Schedule & Fares)",
+    url: "https://www.blf.co.jp/en/about",
+    note: "Regular sightseeing boats depart at 09:10, 10:50, 12:50, and 14:50 daily (~60-minute autumn canyon cruise).",
+    isExisting: false
+  },
+
+  // Nikko & Lake Chuzenji
+  {
+    id: "acc13", area: "Nikko & Lake Chuzenji", day: "Days 16–17 (Nov 5–6)",
+    place: "JR Nikko / Tobu Nikko Station ↔ Shinkyo, Chuzenji Onsen, Ryuzu Falls & Yumoto Onsen (Tobu Bus Nikko Official 2026 Timetable PDF)",
+    url: "https://www.tobu-bus.com/pc/assets/pdf/nikko_timetable_summer_en.pdf?20260408",
+    note: "Full English timetable PDF for Tobu Nikko Station Stop 2A (Chuzenji Onsen & Yumoto Onsen) and Stop 2B (World Heritage Sightseeing Bus).",
+    isExisting: false
+  },
+  {
+    id: "acc14", area: "Nikko & Lake Chuzenji", day: "Days 16–17 (Nov 5–6)",
+    place: "Tobu Bus Nikko Route Map, Free Pass Coverage Zones & Bus Stop Directory",
+    url: "https://www.tobu-bus.com/pc/assets/pdf/nikko_rosen_summer_en.pdf?20260408",
+    note: "Visual map of all bus stops across the World Heritage shrine zone, Irohazaka Winding Road, Lake Chuzenji, Kegon Falls, Ryuzu Falls, and Senjogahara.",
+    isExisting: false
+  }
+];
+
+// 4. Sightseeing & Autumn Foliage Guides (All 15 Guides in English)
+const DEFAULT_GUIDES = [
+  // Aomori, Hirosaki, Towada & Misawa
+  {
+    id: "gd1", area: "Aomori, Hirosaki, Towada & Misawa", day: "Day 4 (Oct 24)",
+    location: "Oirase Gorge & Lake Towada (Walking Trail & Sightseeing Guide)",
+    url: "https://www.japanrailclub.com/shinryoku-season-oirase-keiryu-lake-towada/",
+    note: "Comprehensive trail guide covering the Ishigedo → Kumoi-no-Taki → Choshi Otaki stream hike and Lake Towada sightseeing.",
+    isExisting: true
+  },
+  {
+    id: "gd2", area: "Aomori, Hirosaki, Towada & Misawa", day: "Day 3 (Oct 23)",
+    location: "Hirosaki Park (Hirosaki Castle Chrysanthemum & Autumn Foliage Festival Guide)",
+    url: "https://aomori-tourism.com/feature/detail_16.html",
+    note: "Official guide to Hirosaki Park's 1,000 maples, 2,600 autumn cherry trees, botanical garden chrysanthemum dolls, and evening castle moat illuminations.",
+    isExisting: false
+  },
+  {
+    id: "gd3", area: "Aomori, Hirosaki, Towada & Misawa", day: "Day 5 (Oct 25)",
+    location: "Mount Hakkoda, Jogakura Bridge & Tsutanuma Pond (Autumn Foliage Model Route)",
+    url: "https://aomori-tourism.com/feature/detail_33.html",
+    note: "Official feature on the Hakkoda Ropeway aerial foliage gondola, the 360m-long Jogakura Bridge canyon view, and the Path of Seven Marshes at Tsutanuma.",
+    isExisting: false
+  },
+  {
+    id: "gd4", area: "Aomori, Hirosaki, Towada & Misawa", day: "Day 5 (Oct 25)",
+    location: "Tsutanuma Pond (Early-Morning Entry Reservation Policy & Daytime Access Info)",
+    url: "https://aomori-tourism.com/spot/detail_2567.html",
+    note: "Advance online reservation is only required if entering the deck during sunrise hours (05:00–07:30) in late October; daytime visits require no reservation.",
+    isExisting: false
+  },
+  {
+    id: "gd5", area: "Aomori, Hirosaki, Towada & Misawa", day: "Days 6–7 (Oct 26–27)",
+    location: "Hoshino Resorts Aomoriya (2-Night Onsen, Nebuta Show & Shibusawa Park Guide)",
+    url: "https://aomori-tourism.com/en/feature/detail_166.html",
+    note: "English guide to the floating Ukiyu outdoor hot spring, Michinoku Matsuriya festival show, apple juice faucet, and autumn walks around Shibusawa Park.",
+    isExisting: false
+  },
+
+  // Sendai, Naruko, Akiu & Matsushima
+  {
+    id: "gd6", area: "Sendai, Naruko, Akiu & Matsushima", day: "Day 10 (Oct 30)",
+    location: "Akiu Great Falls & Rairaikyo Gorge (Akiu Onsen Sightseeing & Trail Map)",
+    url: "https://akiusato.jp/seeing/meishou.html",
+    note: "Official guide to 55m-high Akiu Great Falls (one of Japan's Top 100 Waterfalls) and the Rairaikyo Gorge 'Momiji no Komichi' trail & Heart Rock.",
+    isExisting: true
+  },
+  {
+    id: "gd7", area: "Sendai, Naruko, Akiu & Matsushima", day: "Day 9 (Oct 29)",
+    location: "Naruko Gorge (Ofukazawa Bridge, Rest House Viewpoint & Walking Trail Guide)",
+    url: "https://www.japanrailclub.com/naruko-gorge-beginner-guide-top-autumn-spot/",
+    note: "Complete visitor guide to photographing trains emerging from the tunnel into the 100m-deep autumn canyon and walking the 50-minute Ofukazawa nature loop.",
+    isExisting: false
+  },
+  {
+    id: "gd8", area: "Sendai, Naruko, Akiu & Matsushima", day: "Day 11 (Oct 31)",
+    location: "Matsushima Entsuin Temple (Moss Gardens, Sankeiden Mausoleum & Autumn Light-Up)",
+    url: "https://visitmiyagi.com/articles/entsuin-temple/",
+    note: "English guide to Entsuin Temple's Japanese maple gardens, rock gardens, and the magical evening reflection pool illumination in autumn.",
+    isExisting: false
+  },
+
+  // Yamagata, Yamadera & Mogami River
+  {
+    id: "gd9", area: "Yamagata, Yamadera & Mogami River", day: "Day 13 (Nov 2)",
+    location: "Yamadera [Risshakuji Temple] (1,015-Step Climb & Godaido Observation Deck Guide)",
+    url: "https://japanstartshere.com/2022/12/08/yamadera-day-trip/",
+    note: "Step-by-step walking guide from Konpon Chudo Hall past Semizuka and Niomon Gate up to Kaisando and the cliffside Godaido viewing deck.",
+    isExisting: true
+  },
+  {
+    id: "gd10", area: "Yamagata, Yamadera & Mogami River", day: "Day 14 (Nov 3)",
+    location: "Mogami River (Mogami Gorge Basho Line Autumn Foliage Boat Cruise Guide)",
+    url: "https://japanspecialtraveler.com/guides/yamagata-mogami-gorge-guide/",
+    note: "Detailed English guide to the 12km downstream cruise accompanied by traditional boatmen songs and vibrant autumn canyon walls.",
+    isExisting: false
+  },
+
+  // Nikko, Lake Chuzenji & Oku-Nikko
+  {
+    id: "gd11", area: "Nikko, Lake Chuzenji & Oku-Nikko", day: "Days 16–17 (Nov 5–6)",
+    location: "Nikko Autumn Leaves Guide (Toshogu, Shoyoen, Irohazaka, Lake Chuzenji, Kegon Falls & Ryuzu Falls)",
+    url: "https://www.japan-guide.com/e/e3817.html",
+    note: "Elevation-by-elevation autumn foliage calendar across Nikko. Early November (Nov 5–6) is prime peak timing for Rinnoji Shoyoen Garden, Toshogu, Shinkyo Bridge, and Irohazaka!",
+    isExisting: false
+  },
+  {
+    id: "gd12", area: "Nikko, Lake Chuzenji & Oku-Nikko", day: "Days 16–17 (Nov 5–6)",
+    location: "Car-Free Nikko by Bus & Foot: World Heritage Shrines to Lake Chuzenji & Kegon Falls",
+    url: "https://media.jreast.co.jp/articles/3101",
+    note: "JR East official model timetable for navigating the World Heritage shrine area and Lake Chuzenji / Kegon Falls smoothly by Tobu Bus.",
+    isExisting: false
+  },
+  {
+    id: "gd13", area: "Nikko, Lake Chuzenji & Oku-Nikko", day: "Day 17 (Nov 6)",
+    location: "Oku-Nikko Autumn Foliage Route 2026 (Irohazaka, Lake Chuzenji, Kegon Falls & Ryuzu Falls)",
+    url: "https://watabi.org/en/articles/nikko-chuzenji-autumn-guide",
+    note: "2026 English route guide for Oku-Nikko (*notes the 2026 Akechidaira Ropeway suspension and recommends heading straight to Chuzenji Onsen for Kegon Falls, Lake Chuzenji, and Ryuzu Falls).",
+    isExisting: false
+  },
+  {
+    id: "gd14", area: "Nikko, Lake Chuzenji & Oku-Nikko", day: "Day 17 (Nov 6)",
+    location: "Nikko Official Tourism Course: Three Great Waterfalls of Oku-Nikko & Lake Chuzenji Walk",
+    url: "https://www.nikko-kankou.org/courses/84",
+    note: "Official Nikko Tourism Association itinerary covering Kegon Falls, Ryuzu Falls, Yudaki Falls, and lakeside walking times.",
+    isExisting: false
+  },
+  {
+    id: "gd15", area: "Nikko, Lake Chuzenji & Oku-Nikko", day: "Days 16–17 (Nov 5–6)",
+    location: "Nikko Autumn Leaves Self-Guide & Tips for Beating Irohazaka Traffic (2026 Edition)",
+    url: "https://selfguidejapan.com/blog/nikko-autumn-leaves-2026",
+    note: "Practical 2026 tips on boarding early morning buses before 09:00 to avoid Irohazaka congestion and pacing your World Heritage shrine visit.",
+    isExisting: false
+  }
+];
+
+// 5. Dedicated Hotel Stays Data (7 Bases / 8 Stays, 21 Nights Total = ¥266,949)
+const HOTEL_STAYS = [
+  {
+    order: 1,
+    name: "Ritz Carlton Omiya (Omiya Base • Part 1)",
+    region: "Saitama",
+    checkIn: "Wed, Oct 21, 2026",
+    checkOut: "Fri, Oct 23, 2026",
+    nights: 2,
+    perNightJpy: 6000,
+    totalJpy: 12000,
+    url: "",
+    access: "JR Omiya Station (Major Shinkansen hub for Tohoku & Yamagata lines)",
+    highlights: "2-night arrival base after landing at Haneda Airport (09:50). Ideal for exchanging your 10-Day JR East Pass and organizing main luggage before heading north.",
+    luxury: false
+  },
+  {
+    order: 2,
+    name: "APA Hotel Morioka Ekimae",
+    region: "Iwate-Aomori",
+    checkIn: "Fri, Oct 23, 2026",
+    checkOut: "Mon, Oct 26, 2026",
+    nights: 3,
+    perNightJpy: 8467,
+    totalJpy: 25401,
+    url: "https://www3.apahotel.com/hotel/hokkaido-tohoku/iwate/morioka-ekimae/",
+    access: "1-min walk from JR Morioka Station East Exit (steps from Pyonpyonsha & Azumaya Wanko Soba)",
+    highlights: "Strategic 3-night Northern Tohoku hub allowing luggage-free Shinkansen day trips to Hirosaki Park (Day 3), Oirase Gorge & Lake Towada (Day 4), and Mount Hakkoda & Tsutanuma (Day 5).",
+    luxury: false
+  },
+  {
+    order: 3,
+    name: "Hoshino Resorts Aomoriya (Misawa)",
+    region: "Aomori",
+    checkIn: "Mon, Oct 26, 2026",
+    checkOut: "Wed, Oct 28, 2026",
+    nights: 2,
+    perNightJpy: 56800,
+    totalJpy: 113600,
+    url: "https://hoshinoresorts.com/en/hotels/aomoriya/",
+    access: "15-min walk from Aoimori Railway 'Misawa Station' or Free Hotel Shuttle Bus (reserve 3 days prior)",
+    highlights: "Signature 2-night luxury onsen retreat featuring the 'Ukiyu' open-air bath floating on a pond, live Aomori Nebuta festival shows, and expansive autumn foliage walks in Shibusawa Park.",
+    luxury: true
+  },
+  {
+    order: 4,
+    name: "APA Hotel Sendai Eki Itsutsubashi",
+    region: "Miyagi",
+    checkIn: "Wed, Oct 28, 2026",
+    checkOut: "Sun, Nov 1, 2026",
+    nights: 4,
+    perNightJpy: 9700,
+    totalJpy: 38800,
+    url: "https://www3.apahotel.com/hotel/hokkaido-tohoku/miyagi/sendaieki-itsutsubashi",
+    access: "8-min walk from JR Sendai Station West Exit / 2-min walk from Subway Namboku Line 'Itsutsubashi Station' North Exit 3 (includes large public bath)",
+    highlights: "4-night Miyagi base for day trips to Naruko Gorge (Day 9), Akiu Great Falls & Rairaikyo Gorge (Day 10), and Matsushima Entsuin Temple (Day 11). Just a 6-min walk from famous Murakamiya Mochiten.",
+    luxury: false
+  },
+  {
+    order: 5,
+    name: "Tendo Central Hotel (Tendo Onsen)",
+    region: "Yamagata",
+    checkIn: "Sun, Nov 1, 2026",
+    checkOut: "Wed, Nov 4, 2026",
+    nights: 3,
+    perNightJpy: 5549,
+    totalJpy: 16647,
+    url: "https://www.japanican.com/hotel/japan/yamagata/tendo-central-hotel",
+    access: "12-min walk from JR Tendo Station (8-min walk to Teuchi Suisha Kisoba)",
+    highlights: "Comfortable 3-night hot spring hotel serving as your base for climbing Yamadera (Day 13) and cruising the Mogami River (Day 14).",
+    luxury: false
+  },
+  {
+    order: 6,
+    name: "APA Hotel Ibaraki Koga Ekimae",
+    region: "Tochigi-Ibaraki",
+    checkIn: "Wed, Nov 4, 2026",
+    checkOut: "Sat, Nov 7, 2026",
+    nights: 3,
+    perNightJpy: 6667,
+    totalJpy: 20001,
+    url: "https://www3.apahotel.com/hotel/syutoken/ibaraki/ibaraki-koga-ekimae/",
+    access: "5-min walk from JR Utsunomiya Line 'Koga Station' East Exit",
+    highlights: "Smart, high-value 3-night base that sidesteps peak-season Nikko hotel surcharges while offering easy rail access to JR Nikko Station via Utsunomiya.",
+    luxury: false
+  },
+  {
+    order: 7,
+    name: "Ritz Carlton Omiya (Omiya Base • Part 2)",
+    region: "Saitama",
+    checkIn: "Sat, Nov 7, 2026",
+    checkOut: "Mon, Nov 9, 2026",
+    nights: 2,
+    perNightJpy: 6000,
+    totalJpy: 12000,
+    url: "",
+    access: "JR Omiya Station (35 min direct on the JR Utsunomiya Line from Koga Station • ¥620)",
+    highlights: "2-night stopover after your 16-day Tohoku & Nikko loop to rest and consolidate luggage before moving into central Tokyo.",
+    luxury: false
+  },
+  {
+    order: 8,
+    name: "APA Hotel Suidobashi Ekimae",
+    region: "Tokyo",
+    checkIn: "Mon, Nov 9, 2026",
+    checkOut: "Wed, Nov 11, 2026",
+    nights: 2,
+    perNightJpy: 14250,
+    totalJpy: 28500,
+    url: "https://www3.apahotel.com/hotel/syutoken/tokyo/suidobashi-ekimae/",
+    access: "1-min walk from JR Chuo-Sobu Line 'Suidobashi Station' West Exit / 5-min walk from Toei Mita Line 'Suidobashi Station'",
+    highlights: "Final 2-night central Tokyo base with direct train links to Shinjuku, Akihabara, and Tokyo Station, right next to historic Koishikawa Korakuen Garden.",
+    luxury: false
+  }
+];
+
+const PREP_TASKS = [
+  { id: "p1", title: "Purchase & Exchange 10-Day JR East Pass (Tohoku Area)", sub: "Activate on Day 3 (Oct 23) for Omiya → Morioka (¥50,000)" },
+  { id: "p2", title: "Book Hoshino Resorts Aomoriya Shuttle Bus", sub: "Day 6 (Oct 26) from Misawa Station • Reserve on official site 3+ days prior" },
+  { id: "p3", title: "Reserve Shinkansen & JR Bus 'Oirase-go / Mizuumi-go' Seats", sub: "Book seat reservations via JR-EAST Train Reservation (Ekinet)" },
+  { id: "p4", title: "Confirm Tsutanuma Pond Visit Window (Day 5 • Oct 25)", sub: "Daytime visit requires no booking; sunrise slot (05:00–07:30) requires online ticket" },
+  { id: "p5", title: "Complete Visit Japan Web (Immigration & Customs QR)", sub: "For Wed, Oct 21 arrival at Haneda Airport (09:50)" },
+  { id: "p6", title: "Load IC Card (Suica / PASMO) & Prepare ¥100/¥500 Coins", sub: "Naruko Gorge Koyo-go Bus (¥450) & Nikko Sakaeya accept cash only" },
+  { id: "p7", title: "Pack Warm Windproof Layers for Northern Tohoku & Oku-Nikko", sub: "Mount Hakkoda, Oirase & Lake Chuzenji dip to 5–8°C in mornings/evenings" },
+  { id: "p8", title: "Verify Key Restaurant Operating Days (Arahama & Murakamiya)", sub: "Arahama (closed Tue/Wed) & Murakamiya (open Fri–Sun) are aligned with Days 10–11" }
+];
+
+const REGION_WEATHER = {
+  "Saitama": "🌡️ 13°C–20°C • Long sleeves + light jacket",
+  "Iwate-Aomori": "🌡️ 6°C–14°C • Knit sweater + windproof coat & gloves for Hakkoda/Oirase",
+  "Aomori": "🌡️ 7°C–15°C • Trench / light down jacket + comfortable resort wear",
+  "Miyagi": "🌡️ 10°C–17°C • Jacket + scarf (breezy along Naruko Gorge canyon)",
+  "Yamagata": "🌡️ 8°C–15°C • Grippy walking shoes (1,015 steps at Yamadera) + warm layers",
+  "Tochigi-Ibaraki": "🌡️ 7°C–15°C • Lake Chuzenji sits at 1,269m elevation—bring warm outerwear",
+  "Tokyo": "🌡️ 12°C–19°C • Comfortable autumn jacket or trench coat"
+};
+
+function togglePrepTask(taskId) {
+  if (!state.prepDone) state.prepDone = {};
+  state.prepDone[taskId] = !state.prepDone[taskId];
+  saveState();
+  renderPrepChecklist();
+}
+
+function renderPrepChecklist() {
+  const grid = document.getElementById("prepChecklistGrid");
+  if (!grid) return;
+  if (!state.prepDone) state.prepDone = {};
+  let doneCount = 0;
+  grid.innerHTML = PREP_TASKS.map(t => {
+    const done = !!state.prepDone[t.id];
+    if (done) doneCount++;
+    return `
+      <div onclick="togglePrepTask('${t.id}')" style="cursor:pointer;padding:10px 12px;border-radius:10px;border:1px solid ${done ? 'var(--forest)' : 'var(--border)'};background:${done ? 'var(--forest-soft)' : 'var(--bg)'};display:flex;align-items:flex-start;gap:9px;transition:all 0.15s ease;">
+        <span style="font-size:15px;line-height:1.2;">${done ? '✅' : '⬜'}</span>
+        <div>
+          <div style="font-size:12.5px;font-weight:800;color:var(--ink);${done ? 'text-decoration:line-through;opacity:0.75;' : ''}">${t.title}</div>
+          <div style="font-size:11px;color:var(--ink-muted);margin-top:2px;">${t.sub}</div>
+        </div>
+      </div>
+    `;
+  }).join("");
+  const pct = Math.round((doneCount / PREP_TASKS.length) * 100);
+  const badge = document.getElementById("checklistProgressBadge");
+  if (badge) badge.textContent = `${doneCount} / ${PREP_TASKS.length} Done (${pct}%)`;
+  const bar = document.getElementById("checklistProgressBar");
+  if (bar) bar.style.width = `${pct}%`;
+}
+
+let state = {
+  prepDone: {},
+  fxRate: 122,
+  darkMode: false,
+  activeRegion: "ALL",
+  activeFoodRegion: "ALL",
+  activeAccessArea: "ALL",
+  activeGuideArea: "ALL",
+  days: JSON.parse(JSON.stringify(DEFAULT_DAYS)),
+  food: JSON.parse(JSON.stringify(DEFAULT_FOOD)),
+  access: JSON.parse(JSON.stringify(DEFAULT_ACCESS)),
+  guides: JSON.parse(JSON.stringify(DEFAULT_GUIDES)),
+  syncedLocalTransit: false
+};
+
+function showToast(msg) {
+  const box = document.getElementById("toastBox");
+  if (!box) return;
+  box.textContent = msg;
+  box.classList.add("show");
+  clearTimeout(window._toastTimer);
+  window._toastTimer = setTimeout(() => {
+    box.classList.remove("show");
+  }, 3200);
+}
+
+function loadState() {
+  try {
+    const saved = localStorage.getItem("jpTrip2026State_en_v1");
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed && parsed.days && parsed.days.length === 22) {
+        state = parsed;
+        document.getElementById("fxRateInput").value = state.fxRate;
+        if (state.darkMode) {
+          document.body.classList.add("dark-mode");
+          document.getElementById("themeBtn").textContent = "☀️ Light Mode";
+        }
+      }
+    }
+  } catch (e) {}
+}
+
+function saveState() {
+  try {
+    localStorage.setItem("jpTrip2026State_en_v1", JSON.stringify(state));
+  } catch (e) {}
+}
+
+function toggleDarkMode() {
+  state.darkMode = !state.darkMode;
+  document.body.classList.toggle("dark-mode", state.darkMode);
+  document.getElementById("themeBtn").textContent = state.darkMode ? "☀️ Light Mode" : "🌙 Dark Mode";
+  saveState();
+}
+
+function fmtJpy(val) {
+  return "¥" + Math.round(Number(val) || 0).toLocaleString("en-US");
+}
+
+function fmtSgd(jpyVal) {
+  const sgd = (Number(jpyVal) || 0) / (state.fxRate || 122);
+  return "S$" + sgd.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function switchTab(tabId, btnEl) {
+  document.querySelectorAll(".tab-pane").forEach(el => el.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach(el => el.classList.remove("active"));
+  const target = document.getElementById("tab-" + tabId);
+  if (target) target.classList.add("active");
+  if (btnEl) {
+    btnEl.classList.add("active");
+  } else {
+    const matchBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+    if (matchBtn) matchBtn.classList.add("active");
+  }
+}
+
+function switchTabById(tabId) {
+  switchTab(tabId, null);
+  window.scrollTo({ top: 180, behavior: "smooth" });
+}
+
+function jumpToRegionSchedule(reg) {
+  switchTabById("itinerary");
+  filterRegionByName(reg);
+}
+
+function updateFxRate(val) {
+  const num = parseFloat(val);
+  if (!isNaN(num) && num > 10) {
+    state.fxRate = num;
+    saveState();
+    renderAll();
+  }
+}
+
+function filterRegion(reg, btnEl) {
+  state.activeRegion = reg;
+  document.querySelectorAll("#regionFilters .pill").forEach(p => p.classList.remove("active"));
+  if (btnEl) btnEl.classList.add("active");
+  renderItineraryCards();
+}
+
+function filterRegionByName(reg) {
+  state.activeRegion = reg;
+  const pills = document.querySelectorAll("#regionFilters .pill");
+  pills.forEach(p => {
+    p.classList.toggle("active", p.getAttribute("onclick").includes("'" + reg + "'"));
+  });
+  renderItineraryCards();
+}
+
+function jumpToDayCard(dayNum) {
+  state.activeRegion = "ALL";
+  document.querySelectorAll("#regionFilters .pill").forEach((p, idx) => p.classList.toggle("active", idx === 0));
+  renderItineraryCards();
+  const el = document.getElementById("day-card-" + dayNum);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+function renderKpis() {
+  let staySum = 0, travelSum = 0, funSum = 0, unbookedAdd = 0;
+  state.days.forEach(d => {
+    staySum += Number(d.stay) || 0;
+    travelSum += Number(d.travelBase) || 0;
+    funSum += Number(d.fun) || 0;
+    unbookedAdd += Number(d.travelActualAdd) || 0;
+  });
+
+  const currentTotal = staySum + travelSum + funSum;
+  const reconciledTotal = state.syncedLocalTransit ? currentTotal : (currentTotal + unbookedAdd);
+
+  document.getElementById("kpiBaselineJpy").textContent = fmtJpy(currentTotal);
+  document.getElementById("kpiBaselineSgd").textContent = `${fmtSgd(currentTotal)} • Stay ${fmtJpy(staySum)} + Travel ${fmtJpy(travelSum)} + Fun/Food ${fmtJpy(funSum)}`;
+
+  document.getElementById("kpiReconciledJpy").textContent = fmtJpy(reconciledTotal);
+  document.getElementById("kpiReconciledSgd").textContent = state.syncedLocalTransit
+    ? `${fmtSgd(reconciledTotal)} • Local & Post-Pass Transit (+¥25,950) Merged ✓`
+    : `${fmtSgd(reconciledTotal)} • Incl. Post-Pass JR ¥19,230 + Buses/Ropeway ¥6,720`;
+
+  const passSavings = 82450 - 50000;
+  document.getElementById("kpiPassSavingsJpy").textContent = `Save ${fmtJpy(passSavings)}`;
+  document.getElementById("kpiPassSavingsSgd").textContent = `${fmtSgd(passSavings)} Saved (¥50,000 Pass vs ¥82,450 Regular JR Fares)`;
+
+  const foodBadge = document.getElementById("foodCountBadge");
+  if (foodBadge) foodBadge.textContent = state.food.length;
+  const accBadge = document.getElementById("accessCountBadge");
+  if (accBadge) accBadge.textContent = state.access.length;
+  const gdBadge = document.getElementById("guidesCountBadge");
+  if (gdBadge) gdBadge.textContent = state.guides.length;
+}
+
+function renderItineraryCards() {
+  const jumpStrip = document.getElementById("dayJumpStrip");
+  if (jumpStrip) {
+    jumpStrip.innerHTML = `<span style="font-size:11.5px;font-weight:800;color:var(--ink-muted);align-self:center;margin-right:4px;">⚡ Quick Jump:</span>` +
+      state.days.map(d => `
+        <button class="day-jump-btn ${d.passCovered ? 'pass-day' : ''}" onclick="jumpToDayCard(${d.day})" title="Day ${d.day}: ${d.routeJp}">
+          D${d.day} (${d.date.slice(5).replace('-', '/')})
+        </button>
+      `).join("");
+  }
+
+  const container = document.getElementById("itineraryList");
+  const query = (document.getElementById("itinerarySearch").value || "").toLowerCase().trim();
+
+  const filtered = state.days.filter(d => {
+    if (state.activeRegion !== "ALL" && d.region !== state.activeRegion) return false;
+    if (query) {
+      const hay = `${d.routeJp} ${d.routeEn} ${d.hotel} ${d.region} ${d.tip} ${d.legs.join(" ")}`.toLowerCase();
+      return hay.includes(query);
+    }
+    return true;
+  });
+
+  if (filtered.length === 0) {
+    container.innerHTML = `<div class="section-card"><p>No days match your filter. Click "All Days (22d)" to reset.</p></div>`;
+    return;
+  }
+
+  container.innerHTML = filtered.map(d => {
+    const dayTotal = (Number(d.stay) || 0) + (Number(d.travelBase) || 0) + (Number(d.fun) || 0);
+    const hotelDisplay = d.hotelUrl
+      ? `<a href="${d.hotelUrl}" target="_blank" rel="noopener">${d.hotel}</a>`
+      : (d.hotel || "—");
+
+    const legsHtml = d.legs.map(l => {
+      const isNonJr = l.includes("Non-Pass") || l.includes("Post-Pass");
+      return `<span class="leg-chip ${isNonJr ? 'non-jr' : ''}">🚆 ${l}</span>`;
+    }).join("");
+
+    return `
+      <article id="day-card-${d.day}" class="day-card ${d.passCovered ? 'pass-active' : ''} ${d.needsAttention ? 'needs-attention' : ''}">
+        <div class="day-header">
+          <div class="day-title-group">
+            <span class="day-num">DAY ${d.day}</span>
+            <span class="day-date">${d.date} (${d.dow})</span>
+            <span class="region-tag region-${d.region}">${d.region.replace('-', ' & ')}</span>
+            <span style="font-size:11px;color:var(--ink-muted);background:var(--bg);border:1px solid var(--border);padding:2px 8px;border-radius:999px;font-weight:600;">${REGION_WEATHER[d.region] || ""}</span>
+            ${d.passCovered ? `<span class="pass-badge">🚄 JR EAST PASS (Day ${d.day - 2} of 10)</span>` : ""}
+          </div>
+          <div class="day-cost-pill">
+            ${fmtJpy(dayTotal)} <small>(${fmtSgd(dayTotal)})</small>
+          </div>
+        </div>
+
+        <div class="day-route-title">${d.routeJp}</div>
+        <div class="day-route-sub">${d.routeEn}</div>
+
+        <div class="day-meta-grid">
+          <div class="meta-item">
+            <strong>🏨 Hotel Base</strong>
+            <span>${hotelDisplay}</span>
+          </div>
+          <div class="meta-item">
+            <strong>🛏️ Accommodation (Stay)</strong>
+            <span>${fmtJpy(d.stay)} (${fmtSgd(d.stay)})</span>
+          </div>
+          <div class="meta-item">
+            <strong>🚆 Transport (Travel)</strong>
+            <span>${fmtJpy(d.travelBase)} ${(!state.syncedLocalTransit && d.travelActualAdd > 0) ? `<em style="color:var(--gold);">(+Local/Post-Pass ${fmtJpy(d.travelActualAdd)})</em>` : ''}</span>
+          </div>
+          <div class="meta-item">
+            <strong>🍱 Dining & Activities</strong>
+            <span>${d.fun ? `${fmtJpy(d.fun)} (${fmtSgd(d.fun)})` : "¥0"}</span>
+          </div>
+        </div>
+
+        <div class="legs-strip">${legsHtml}</div>
+        <div class="day-notes">💡 ${d.tip}</div>
+      </article>
+    `;
+  }).join("");
+}
+
+function renderHotelsTab() {
+  const grid = document.getElementById("hotelGrid");
+  const totalStay = HOTEL_STAYS.reduce((acc, h) => acc + h.totalJpy, 0);
+  const headerEl = document.getElementById("hotelSummaryHeader");
+  if (headerEl) {
+    headerEl.textContent = `Total 21 Nights: ${fmtJpy(totalStay)} (${fmtSgd(totalStay)})`;
+  }
+
+  grid.innerHTML = HOTEL_STAYS.map(h => `
+    <div class="hotel-card ${h.luxury ? 'luxury' : ''}">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;">
+          <span class="region-tag region-${h.region}">Stay #${h.order} • ${h.region.replace('-', ' & ')}</span>
+          <span class="pass-badge" style="background:var(--surface-alt);color:var(--ink);">🛏️ ${h.nights} Nights</span>
+        </div>
+        <h3 style="font-size:16.5px;font-weight:800;margin-bottom:6px;">
+          ${h.url ? `<a href="${h.url}" target="_blank" rel="noopener">${h.name}</a>` : h.name}
+        </h3>
+        <div style="font-size:12.5px;color:var(--ink-muted);margin-bottom:10px;">
+          📅 <strong>Check-In:</strong> ${h.checkIn} → <strong>Check-Out:</strong> ${h.checkOut}
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:12.5px;margin-bottom:10px;">
+          <div><strong>🚉 Station Access:</strong> ${h.access}</div>
+          <div style="margin-top:4px;color:var(--ink-muted);">${h.highlights}</div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-top:10px;border-top:1px solid var(--border);">
+        <div>
+          <span style="font-size:11px;color:var(--ink-light);display:block;">${fmtJpy(h.perNightJpy)} / night (${fmtSgd(h.perNightJpy)})</span>
+          <strong style="font-size:16px;color:var(--ink);">Subtotal ${fmtJpy(h.totalJpy)} <small style="color:var(--ink-muted);">(${fmtSgd(h.totalJpy)})</small></strong>
+        </div>
+        ${h.url
+          ? `<a href="${h.url}" target="_blank" rel="noopener" class="btn btn-primary" style="border-bottom:none;color:#FFF;">🔗 Official Hotel Page</a>`
+          : `<span class="existing-badge">Base Stay</span>`}
+      </div>
+    </div>
+  `).join("");
+}
+
+function renderBudgetTable() {
+  const tbody = document.getElementById("budgetTableBody");
+  const tfoot = document.getElementById("budgetTableFoot");
+
+  let staySum = 0, travelSum = 0, funSum = 0;
+  const regMap = {};
+
+  tbody.innerHTML = state.days.map((d, idx) => {
+    const stay = Number(d.stay) || 0;
+    const travel = Number(d.travelBase) || 0;
+    const fun = Number(d.fun) || 0;
+    const rowTotal = stay + travel + fun;
+
+    staySum += stay;
+    travelSum += travel;
+    funSum += fun;
+
+    const rLabel = d.region.replace('-', ' & ');
+    if (!regMap[rLabel]) regMap[rLabel] = 0;
+    regMap[rLabel] += stay + (d.day > 1 && d.day < 22 ? travel : 0) + (d.day === 11 ? fun : 0);
+
+    return `
+      <tr>
+        <td><strong>Day ${d.day}</strong></td>
+        <td style="white-space:nowrap;">${d.date} (${d.dow})</td>
+        <td><span class="region-tag region-${d.region}">${rLabel}</span></td>
+        <td>
+          <input type="text" class="editable-text" value="${d.routeJp.replace(/"/g, '&quot;')}" onchange="updateDayField(${idx}, 'routeJp', this.value)">
+        </td>
+        <td>
+          <input type="text" class="editable-text" value="${(d.hotel || '').replace(/"/g, '&quot;')}" onchange="updateDayField(${idx}, 'hotel', this.value)">
+        </td>
+        <td class="num-col">
+          <input type="number" class="editable-num" value="${stay}" step="100" onchange="updateDayField(${idx}, 'stay', this.value)">
+        </td>
+        <td class="num-col">
+          <input type="number" class="editable-num" value="${travel}" step="100" onchange="updateDayField(${idx}, 'travelBase', this.value)">
+        </td>
+        <td class="num-col">
+          <input type="number" class="editable-num" value="${fun}" step="100" onchange="updateDayField(${idx}, 'fun', this.value)">
+        </td>
+        <td class="num-col"><strong>${fmtJpy(rowTotal)}</strong></td>
+        <td class="num-col" style="color:var(--ink-muted);">${fmtSgd(rowTotal)}</td>
+      </tr>
+    `;
+  }).join("");
+
+  const grandTotal = staySum + travelSum + funSum;
+  tfoot.innerHTML = `
+    <tr style="background:var(--surface-alt);font-weight:800;font-size:13.5px;">
+      <td colspan="5">Grand Total (22 Days • All 21 Nights Confirmed)</td>
+      <td class="num-col">${fmtJpy(staySum)}<br><small style="font-weight:600;color:var(--ink-muted);">${fmtSgd(staySum)}</small></td>
+      <td class="num-col">${fmtJpy(travelSum)}<br><small style="font-weight:600;color:var(--ink-muted);">${fmtSgd(travelSum)}</small></td>
+      <td class="num-col">${fmtJpy(funSum)}<br><small style="font-weight:600;color:var(--ink-muted);">${fmtSgd(funSum)}</small></td>
+      <td class="num-col" style="color:var(--accent);">${fmtJpy(grandTotal)}</td>
+      <td class="num-col" style="color:var(--accent);">${fmtSgd(grandTotal)}</td>
+    </tr>
+  `;
+
+  const cats = [
+    { label: "🏨 Accommodations (Stay • All 21 Nights)", val: staySum, color: "#1E3A5F" },
+    { label: "🍱 Dining, Sightseeing & Shopping (Fun / Food)", val: funSum, color: "#D97706" },
+    { label: "🚄 Flights, 10-Day JR Pass & Transit (Travel)", val: travelSum, color: "#246347" }
+  ];
+  document.getElementById("categoryBars").innerHTML = cats.map(c => {
+    const pct = grandTotal > 0 ? Math.round((c.val / grandTotal) * 100) : 0;
+    return `
+      <div class="bar-row">
+        <div class="bar-label">
+          <span>${c.label}</span>
+          <span>${fmtJpy(c.val)} (${fmtSgd(c.val)} • ${pct}%)</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${pct}%;background:${c.color};"></div>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  const regTotal = Object.values(regMap).reduce((a, b) => a + b, 0) || 1;
+  const regColors = {
+    "Aomori": "#C83E2B",
+    "Miyagi": "#D97706",
+    "Iwate & Aomori": "#246347",
+    "Tokyo": "#334155",
+    "Saitama": "#1E3A5F",
+    "Yamagata": "#6B21A8",
+    "Tochigi & Ibaraki": "#9A3412"
+  };
+  document.getElementById("regionalBars").innerHTML = Object.entries(regMap).map(([rName, rVal]) => {
+    const pct = Math.round((rVal / regTotal) * 100);
+    return `
+      <div class="bar-row">
+        <div class="bar-label">
+          <span>${rName}</span>
+          <span>${fmtJpy(rVal)} (${fmtSgd(rVal)} • ${pct}%)</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${pct}%;background:${regColors[rName] || '#1E3A5F'};"></div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+function updateDayField(idx, field, val) {
+  if (field === "stay" || field === "travelBase" || field === "fun") {
+    state.days[idx][field] = Number(val) || 0;
+  } else {
+    state.days[idx][field] = val;
+  }
+  saveState();
+  renderAll();
+}
+
+function syncLocalTransitToBudget() {
+  if (state.syncedLocalTransit) {
+    showToast("✓ Local & post-pass transit fares (+¥25,950) are already merged into the daily budget ledger");
+    return;
+  }
+  state.days.forEach(d => {
+    if (d.travelActualAdd > 0) {
+      d.travelBase = (Number(d.travelBase) || 0) + d.travelActualAdd;
+    }
+  });
+  state.syncedLocalTransit = true;
+  saveState();
+  renderAll();
+  showToast("⚡ Merged local & post-pass transit fares (+¥25,950) into the daily expense ledger!");
+}
+
+function renderRailTable() {
+  const startDay = parseInt(document.getElementById("passStartSelect").value || "3", 10);
+  const endDay = startDay + 9;
+
+  const railDays = state.days.filter(d => d.day >= 3 && d.day <= 18);
+  let jrSum = 0, nonJrSum = 0, allSum = 0, coveredJrSum = 0, outOfPocketJrSum = 0;
+
+  const tbody = document.getElementById("railTableBody");
+  tbody.innerHTML = railDays.map(d => {
+    const inWindow = d.day >= startDay && d.day <= endDay;
+    const jr = d.jrOnly || 0;
+    const all = d.totalAllLegs || 0;
+    const nonJr = all - jr;
+
+    jrSum += jr;
+    nonJrSum += nonJr;
+    allSum += all;
+
+    if (inWindow) {
+      coveredJrSum += jr;
+    } else {
+      outOfPocketJrSum += jr;
+    }
+
+    const youPayDay = (inWindow ? 0 : jr) + nonJr;
+
+    return `
+      <tr>
+        <td><strong>Day ${d.day}</strong></td>
+        <td style="white-space:nowrap;">${d.date} (${d.dow})</td>
+        <td><strong>${d.routeJp}</strong></td>
+        <td style="font-size:12px;color:var(--ink-muted);">${d.legs.join(" / ")}</td>
+        <td>
+          ${inWindow
+            ? `<span class="pass-badge">✓ Pass Covered (Day ${d.day - startDay + 1}/10)</span>`
+            : `<span style="font-size:11.5px;color:var(--ink-muted);font-weight:600;">IC Card / Ticket</span>`}
+        </td>
+        <td class="num-col">${fmtJpy(jr)}</td>
+        <td class="num-col">${nonJr > 0 ? `<span style="color:#9A3412;font-weight:700;">${fmtJpy(nonJr)}</span>` : "¥0"}</td>
+        <td class="num-col">${fmtJpy(all)}</td>
+        <td class="num-col"><strong>${fmtJpy(youPayDay)}</strong></td>
+      </tr>
+    `;
+  }).join("");
+
+  const passPrice = 50000;
+  const totalWithPass = passPrice + outOfPocketJrSum + nonJrSum;
+  const netSavings = coveredJrSum - passPrice;
+
+  document.getElementById("passSimSummary").innerHTML =
+    `If you activate the 10-Day Pass for <strong>Day ${startDay} – Day ${endDay}</strong>: Covered JR fares = <strong>${fmtJpy(coveredJrSum)}</strong> vs Pass Cost = <strong>¥50,000</strong> ` +
+    `(Net Savings: <strong style="color:${netSavings >= 0 ? 'var(--forest)' : 'var(--accent)'};">${fmtJpy(netSavings)} / ${fmtSgd(netSavings)}</strong>). ` +
+    `Total Ground Transport = ¥50,000 Pass + Post-Pass JR ${fmtJpy(outOfPocketJrSum)} + Non-JR ${fmtJpy(nonJrSum)} = <strong>${fmtJpy(totalWithPass)} (${fmtSgd(totalWithPass)})</strong>`;
+
+  document.getElementById("railTableFoot").innerHTML = `
+    <tr style="background:var(--surface-alt);font-weight:800;">
+      <td colspan="5">Total (Days 3–18 • Rightmost column includes the ¥50,000 10-Day JR East Pass)</td>
+      <td class="num-col">${fmtJpy(jrSum)}</td>
+      <td class="num-col">${fmtJpy(nonJrSum)}</td>
+      <td class="num-col">${fmtJpy(allSum)}</td>
+      <td class="num-col" style="color:var(--forest);">${fmtJpy(totalWithPass)}<br><small style="font-weight:600;">${fmtSgd(totalWithPass)} (Incl. Pass)</small></td>
+    </tr>
+  `;
+}
+
+function filterFood(region, btnEl) {
+  state.activeFoodRegion = region;
+  const pills = btnEl.parentElement.querySelectorAll(".pill");
+  pills.forEach(p => p.classList.remove("active"));
+  btnEl.classList.add("active");
+  renderGourmet();
+}
+
+function toggleFoodTried(id) {
+  const item = state.food.find(f => f.id === id);
+  if (item) {
+    item.tried = !item.tried;
+    saveState();
+    renderGourmet();
+  }
+}
+
+function deleteFood(id) {
+  state.food = state.food.filter(f => f.id !== id);
+  saveState();
+  renderAll();
+  showToast("🗑️ Removed gourmet spot");
+}
+
+function addCustomFood() {
+  const region = document.getElementById("newFoodRegion").value;
+  const dish = document.getElementById("newFoodDish").value.trim();
+  const place = document.getElementById("newFoodPlace").value.trim();
+  const rating = document.getElementById("newFoodRating").value.trim();
+  const access = document.getElementById("newFoodAccess").value.trim();
+  if (!dish) {
+    showToast("Please enter a specialty dish name");
+    return;
+  }
+  state.food.unshift({
+    id: Date.now(),
+    region,
+    dish,
+    place: place || "Custom Spot",
+    url: "",
+    tabelogScore: rating ? `★ ${rating}` : "★ 3.50",
+    tabelogUrl: "",
+    transitLevel: "easy",
+    transitText: access ? `🟢 ${access}` : "🟢 Public Transit Accessible",
+    sourceTag: "Custom Added",
+    note: "Custom gourmet spot added in planner.",
+    tried: false
+  });
+  document.getElementById("newFoodDish").value = "";
+  document.getElementById("newFoodPlace").value = "";
+  document.getElementById("newFoodRating").value = "";
+  document.getElementById("newFoodAccess").value = "";
+  saveState();
+  renderAll();
+  showToast("🍜 Added new gourmet spot!");
+}
+
+function extractNumericRating(str) {
+  const m = String(str || "").match(/([0-9]\.[0-9]{2})/);
+  return m ? parseFloat(m[1]) : 3.50;
+}
+
+function renderGourmet() {
+  const grid = document.getElementById("gourmetGrid");
+  const list = state.food.filter(f => {
+    if (state.activeFoodRegion === "ALL") return true;
+    if (state.activeFoodRegion === "EASY_ONLY") return f.transitLevel === "easy";
+    return f.region === state.activeFoodRegion;
+  });
+
+  grid.innerHTML = list.map(f => {
+    const tClass = f.transitLevel === "easy" ? "transit-easy" : (f.transitLevel === "bus" ? "transit-bus" : "transit-far");
+    const numScore = extractNumericRating(f.tabelogScore);
+    const barPct = Math.min(100, Math.max(40, Math.round(((numScore - 3.0) / 1.1) * 100)));
+
+    return `
+      <div class="food-card ${f.tried ? 'tried' : ''}">
+        <div>
+          <div class="food-header">
+            <span class="region-tag" style="background:var(--indigo-soft);color:var(--indigo);">${f.region}</span>
+            <span class="tabelog-badge">
+              🍽️ Tabelog: ${f.tabelogUrl ? `<a href="${f.tabelogUrl}" target="_blank" rel="noopener" style="color:#B45309;border-color:#B45309;">${f.tabelogScore}</a>` : f.tabelogScore}
+            </span>
+          </div>
+          <div class="score-bar-track" title="Tabelog Rating Gauge">
+            <div class="score-bar-fill" style="width:${barPct}%;"></div>
+          </div>
+          <div class="food-title" style="margin-top:10px;">${f.dish}</div>
+          <div style="font-size:13.5px;font-weight:800;margin:4px 0;">
+            📍 ${f.url ? `<a href="${f.url}" target="_blank" rel="noopener">${f.place}</a>` : f.place}
+            <span class="food-origin-tag" style="margin-left:6px;">${f.sourceTag}</span>
+          </div>
+          <div class="transit-badge ${tClass}">
+            ${f.transitText}
+          </div>
+          <p style="font-size:12.5px;color:var(--ink-muted);margin-top:8px;">${f.note}</p>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding-top:10px;border-top:1px solid var(--border);">
+          <button class="btn" style="padding:5px 10px;font-size:12px;" onclick="toggleFoodTried(${f.id})">
+            ${f.tried ? "✅ Visited / Checked" : "☐ Mark as Visited / Wishlist"}
+          </button>
+          <button class="btn btn-danger" style="padding:4px 8px;font-size:11.5px;" onclick="deleteFood(${f.id})" title="Delete this gourmet card">🗑️</button>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+// Access Tab Logic
+function filterAccess(area, btnEl) {
+  state.activeAccessArea = area;
+  const pills = btnEl.parentElement.querySelectorAll(".pill");
+  pills.forEach(p => p.classList.remove("active"));
+  btnEl.classList.add("active");
+  renderAccessTable();
+}
+
+function addAccessRow() {
+  const area = document.getElementById("newAccessArea").value;
+  const place = document.getElementById("newAccessPlace").value.trim();
+  const url = document.getElementById("newAccessUrl").value.trim();
+  const note = document.getElementById("newAccessNote").value.trim();
+  if (!place || !url) {
+    showToast("Please enter both a route/destination name and a URL");
+    return;
+  }
+  state.access.unshift({
+    id: "acc_" + Date.now(),
+    area,
+    day: "Custom",
+    place,
+    url,
+    note: note || "User-added timetable link",
+    isExisting: false
+  });
+  document.getElementById("newAccessPlace").value = "";
+  document.getElementById("newAccessUrl").value = "";
+  document.getElementById("newAccessNote").value = "";
+  saveState();
+  renderAll();
+  showToast("🚌 Added bus/boat timetable link!");
+}
+
+function deleteAccessRow(id) {
+  state.access = state.access.filter(a => a.id !== id);
+  saveState();
+  renderAll();
+  showToast("🗑️ Removed timetable link");
+}
+
+function updateAccessField(id, field, val) {
+  const item = state.access.find(a => a.id === id);
+  if (item) {
+    item[field] = val;
+    saveState();
+  }
+}
+
+function renderAccessTable() {
+  const tbody = document.getElementById("accessTableBody");
+  const list = state.access.filter(a => state.activeAccessArea === "ALL" || a.area === state.activeAccessArea);
+
+  tbody.innerHTML = list.map(a => `
+    <tr>
+      <td><strong>${a.area}</strong></td>
+      <td style="white-space:nowrap;font-size:12px;color:var(--ink-muted);">${a.day}</td>
+      <td>
+        <input type="text" class="editable-text" style="font-weight:700;" value="${a.place.replace(/"/g, '&quot;')}" onchange="updateAccessField('${a.id}', 'place', this.value)">
+      </td>
+      <td style="white-space:nowrap;">
+        <a href="${a.url}" target="_blank" rel="noopener" class="btn" style="border-bottom:none;font-size:12px;">🚌 Open Timetable ↗</a>
+      </td>
+      <td>
+        <input type="text" class="editable-text" style="font-size:12px;color:var(--ink-muted);" value="${(a.note || '').replace(/"/g, '&quot;')}" onchange="updateAccessField('${a.id}', 'note', this.value)">
+      </td>
+      <td style="white-space:nowrap;">
+        ${a.isExisting
+          ? `<span class="existing-badge">📌 Core Route Link</span>`
+          : `<span class="added-badge">🚌 Transfer Timetable</span>`}
+      </td>
+      <td>
+        <button class="btn btn-danger" style="padding:4px 8px;font-size:11.5px;" onclick="deleteAccessRow('${a.id}')">🗑️ Delete</button>
+      </td>
+    </tr>
+  `).join("");
+}
+
+// Guides Tab Logic
+function filterGuides(area, btnEl) {
+  state.activeGuideArea = area;
+  const pills = btnEl.parentElement.querySelectorAll(".pill");
+  pills.forEach(p => p.classList.remove("active"));
+  btnEl.classList.add("active");
+  renderGuidesTable();
+  renderPrepChecklist();
+}
+
+function addGuideRow() {
+  const area = document.getElementById("newGuideArea").value;
+  const location = document.getElementById("newGuideLocation").value.trim();
+  const url = document.getElementById("newGuideUrl").value.trim();
+  const note = document.getElementById("newGuideNote").value.trim();
+  if (!location || !url) {
+    showToast("Please enter both a destination name and a guide URL");
+    return;
+  }
+  state.guides.unshift({
+    id: "gd_" + Date.now(),
+    area,
+    day: "Custom",
+    location,
+    url,
+    note: note || "User-added sightseeing guide",
+    isExisting: false
+  });
+  document.getElementById("newGuideLocation").value = "";
+  document.getElementById("newGuideUrl").value = "";
+  document.getElementById("newGuideNote").value = "";
+  saveState();
+  renderAll();
+  showToast("📖 Added sightseeing guide!");
+}
+
+function deleteGuideRow(id) {
+  state.guides = state.guides.filter(g => g.id !== id);
+  saveState();
+  renderAll();
+  showToast("🗑️ Removed sightseeing guide");
+}
+
+function updateGuideField(id, field, val) {
+  const item = state.guides.find(g => g.id === id);
+  if (item) {
+    item[field] = val;
+    saveState();
+  }
+}
+
+function renderGuidesTable() {
+  const tbody = document.getElementById("guidesTableBody");
+  const list = state.guides.filter(g => state.activeGuideArea === "ALL" || g.area === state.activeGuideArea);
+
+  tbody.innerHTML = list.map(g => `
+    <tr>
+      <td><strong>${g.area}</strong></td>
+      <td style="white-space:nowrap;font-size:12px;color:var(--ink-muted);">${g.day}</td>
+      <td>
+        <input type="text" class="editable-text" style="font-weight:700;" value="${g.location.replace(/"/g, '&quot;')}" onchange="updateGuideField('${g.id}', 'location', this.value)">
+      </td>
+      <td style="white-space:nowrap;">
+        <a href="${g.url}" target="_blank" rel="noopener" class="btn" style="border-bottom:none;font-size:12px;">📖 Open Guide ↗</a>
+      </td>
+      <td>
+        <input type="text" class="editable-text" style="font-size:12px;color:var(--ink-muted);" value="${(g.note || '').replace(/"/g, '&quot;')}" onchange="updateGuideField('${g.id}', 'note', this.value)">
+      </td>
+      <td style="white-space:nowrap;">
+        ${g.isExisting
+          ? `<span class="existing-badge">📌 Core Spot Guide</span>`
+          : `<span class="added-badge">🍁 Foliage & Trail Guide</span>`}
+      </td>
+      <td>
+        <button class="btn btn-danger" style="padding:4px 8px;font-size:11.5px;" onclick="deleteGuideRow('${g.id}')">🗑️ Delete</button>
+      </td>
+    </tr>
+  `).join("");
+}
+
+function resetDefaultData() {
+  state.days = JSON.parse(JSON.stringify(DEFAULT_DAYS));
+  state.food = JSON.parse(JSON.stringify(DEFAULT_FOOD));
+  state.access = JSON.parse(JSON.stringify(DEFAULT_ACCESS));
+  state.guides = JSON.parse(JSON.stringify(DEFAULT_GUIDES));
+  state.fxRate = 122;
+  state.syncedLocalTransit = false;
+  document.getElementById("fxRateInput").value = 122;
+  saveState();
+  renderAll();
+  showToast("↺ Reset all planner data to default values");
+}
+
+function exportCsv() {
+  const rows = [
+    ["Day", "DOW", "Date", "Region", "Itinerary_EN", "Hotel", "Stay_JPY", "Travel_JPY", "Fun_Food_JPY", "Total_JPY", "Total_SGD"]
+  ];
+  state.days.forEach(d => {
+    const stay = Number(d.stay) || 0;
+    const travel = Number(d.travelBase) || 0;
+    const fun = Number(d.fun) || 0;
+    const tot = stay + travel + fun;
+    rows.push([
+      d.day, d.dow, d.date, d.region,
+      `"${(d.routeJp || '').replace(/"/g, '""')}"`,
+      `"${(d.hotel || '').replace(/"/g, '""')}"`,
+      stay, travel, fun, tot, (tot / state.fxRate).toFixed(2)
+    ]);
+  });
+  const csvContent = "data:text/csv;charset=utf-8," + rows.map(r => r.join(",")).join("\n");
+  const encodedUri = encodeURI(csvContent);
+  const link = document.createElement("a");
+  link.setAttribute("href", encodedUri);
+  link.setAttribute("download", "Japan_Tohoku_Autumn_2026_Plan_EN.csv");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  showToast("📥 Downloaded English budget CSV file");
+}
+
+function renderAll() {
+  renderKpis();
+  renderItineraryCards();
+  renderHotelsTab();
+  renderBudgetTable();
+  renderRailTable();
+  renderGourmet();
+  renderAccessTable();
+  renderGuidesTable();
+  renderPrepChecklist();
+}
+
+loadState();
+renderAll();
+</script>
+</body>
+</html>
